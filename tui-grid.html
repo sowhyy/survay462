@@ -23,7 +23,7 @@
 
   <!-- ======= Header ======= -->
   <header class="fixed-top d-flex align-items-center">
-    <nav class="container d-flex  align-items-center">
+    <nav class="navbar navbar-expand-md container d-flex  align-items-center">
       <div class="logo mx-auto">
         <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
       </div>
@@ -38,15 +38,66 @@
     </nav>
   </header>
   <!-- End Header -->
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-5">
+          <ul class="side-nav flex-column">
+            <li class="side-nav-item mt-3">
+              <a class="side-nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a class="side-nav-link" href="#">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a class="side-nav-link" href="#">
+                <span data-feather="shopping-cart"></span>
+                Products
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a class="side-nav-link" href="#">
+                <span data-feather="users"></span>
+                Customers
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a class="side-nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Reports
+              </a>
+            </li>
+            <li class="side-nav-item">
+              <a class="side-nav-link" href="#">
+                <span data-feather="layers"></span>
+                Integrations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <section id="signin">
-    <div class="signin-container">
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+  <section id="toast-grid">
+    <div class="toast-grid-container pt-10">
       <div id="grid"></div>
     </div>
   </section>
 
+
+    </div>
+  </main>
+
   <!-- ======= Footer ======= -->
-  <footer>
+  <footer class="footer mt-auto py-3">
     <div class="footer-area d-flex justify-content-center">
       <div class="container">
         <div class="row">
