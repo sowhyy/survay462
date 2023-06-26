@@ -1,0 +1,213 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+  height: 60px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: rgba(0,55,100, .5);
+}
+
+header .header-scrolled {
+  height: 60px;
+  background: #003764;
+  box-shadow: 0px 2px 15px rgba(0,0,0,.3);
+}
+
+header .logo {
+  margin: 0;
+  padding: 0;
+  filter: invert(100%);
+}
+header .logo img{
+  margin-top: 5px;
+}
+
+header .logo:hover {
+  filter: invert(80%);
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Hero / 카드뉴스
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 150vh;
+  }
+}
+
+#hero .carousel,
+#hero .carousel-inner,
+#hero .carousel-item,
+#hero .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+  content: "";
+  background-color: rgba(0,55,100, 0.5);
+}
+
+#hero .carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #hero h5 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+#hero p {
+  width: 80%;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  #hero p {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  #hero p {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+/*--------------------------------------------------------------
+# survay / 질문
+--------------------------------------------------------------*/
+
+#survay {
+  border: 1px solid #8cbbd5;
+  border-radius: 8px;
+}
+
+#survay .survay-header {
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#survay .survay-body {
+  padding: 21px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#survay .form-control {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #8cbbd5;
+  border-radius: 0.375rem;
+  width: 50%;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+footer {
+  z-index: 1;
+}
+.footer-area {
+  background: #f8f8f8;
+  opacity: .5;
+}
+
+.footer-logo h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--gok-Blue-900);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer-head h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--gok-Blue-900);
+}
+
+.footer-contacts p span {
+  color: var(--gok-Blue-900);
+  font-weight: 600;
+  line-height: 0.5;
+}
+
+.footer-contacts p  {
+  line-height: 0.5;
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #003764;
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
+  border-radius: 50px;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #196294;
+  color: #fff;
+}
+
+.back-to-top .active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#signin {
+  padding: 220px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+}
