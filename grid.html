@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta content="" name="description">
   <meta content="" name="keywords">
-
   <title> 공무원 총조사 </title>
-
   <!-- Favicons -->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-
   <!-- Bootstrap CSS Files -->
   <link href="src/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="src/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" as="style" crossorigin
     href="src/pretendard-gov-web_variable/pretendardvariable-gov-dynamic-subset.css" />
+  <link href="src/toast-ui.grid/tui-grid.css" rel="stylesheet">
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
   <header class="fixed-top d-flex align-items-center">
-    <nav class="container d-flex  align-items-center">
+    <nav class="navbar navbar-expand-md container d-flex  align-items-center">
       <div class="logo mx-auto">
         <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
       </div>
@@ -43,44 +38,18 @@
     </nav>
   </header>
   <!-- End Header -->
+  
 
-
-  <section id="signin container-fluid">
-    <div class="signin-container pt-16">
-
-      <form class="form-signin mb-3">
-        <div class="text-center mb-4">
-          <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-            <label for="inputEmail">Email address</label>
-          </div>
-
-          <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-          </div>
-
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-          <button type="button" class="btn btn-secondary mt-5" onclick="window.location.href='tui-grid.html'">
-            tui grid <i class="bi bi-hand-index-thumb-fill"></i>
-          </button>
-      </form>
+  <section id="toast-grid">
+    <div class="toast-grid-container pt-10">
+      <div id="grid"></div>
     </div>
   </section>
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i></a>
-
 
   <!-- ======= Footer ======= -->
-  <footer>
+  <footer class="footer mt-auto py-3">
     <div class="footer-area d-flex justify-content-center">
       <div class="container">
         <div class="row">
@@ -113,20 +82,14 @@
       </div>
     </div>
   </footer>
-
-
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i></a>
-
-
-    <script type="text/javascript" src="js/main.js"></script>
+  <i class="bi bi-arrow-up-short"></i></a>
   <!-- Bootstrap JS Files -->
   <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
   <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
   <!-- Vendor CSS Files -->
-  <!-- Custom scripts -->
+  <script type="text/javascript" src="src/toast-ui.grid/tui-grid.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
-
 </html>
