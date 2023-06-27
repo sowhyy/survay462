@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -66,7 +68,7 @@ header .logo:hover {
 }
 
 #hero .carousel-item::before {
-  content: "";
+  content: '';
   background-color: rgba(0, 55, 100, 0.5);
 }
 
@@ -275,27 +277,13 @@ footer {
   border: 1px solid #f9979b;
   padding: 10px 15px;
 }
+/* 
 
-input[type="text"] {
-  margin-left: 5px;
-  height: 21px;
-  width: 200px;
-  font-size: 14px;
-}
-input[type="text"]:focus {
-  border-radius: 6px;
-  background-color: #e1eef4;
-}
-input[type="text"]:hover {
-  border-radius: 6px;
-  outline: 2px solid #8cbbd5;
-}
-
-[type="radio"],
+[type='radio'],
 span {
   vertical-align: middle;
 }
-[type="radio"] {
+[type='radio'] {
   appearance: none;
   border: 1px solid #575757;
   border-radius: 50%;
@@ -303,77 +291,29 @@ span {
   height: 16px;
   transition: border 0.5s all;
 }
-[type="radio"]:checked {
+[type='radio']:checked {
   background-color: #e4032e;
   outline: 1px solid #e4032e;
   border: 3px solid #fff;
 }
-[type="radio"]:focus-visible {
+[type='radio']:focus-visible {
   outline-color: #196294;
   box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
 }
-[type="radio"]:hover {
+[type='radio']:hover {
   box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
   cursor: pointer;
 }
-[type="radio"]:hover + span {
+[type='radio']:hover + span {
   cursor: pointer;
 }
 
-[type="checkbox"] span {
+[type='checkbox'] span {
   vertical-align: middle;
 }
-[type="checkbox"]:hover + span {
+[type='checkbox']:hover + span {
   cursor: pointer;
-}
-[type="checkbox"] {
-  appearance: none;
-  border: 1px solid #575757;
-  width: 16px;
-  height: 16px;
-  transition: border 0.5s all;
-  vertical-align: middle;
-}
-
-[type="checkbox"]::before {
-  content: "\F26C";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  transform: scale(0) translate(-50%, -50%);
-  line-height: 1;
-}
-.check input[type="checkbox"]:checked {
-  background-color: #63aeff;
-  border-color: rgba(255, 255, 255, 0.3);
-  color: white;
-}
-.check input[type="checkbox"]:checked::before {
-  border-radius: 4px;
-  transform: scale(1) translate(-50%, -50%)
-}
-
-/* Code point
-Unicode: U+F26C
-CSS: \F26C
-JS: \uF26C
-HTML: &#xF26C; */
-
-/* [type="checkbox"]:checked {
-  background-color: #e4032e;
-  outline: 1px solid #e4032e;
-  border: 2px solid #fff;
 } */
-[type="checkbox"]:focus-visible {
-  outline-color: #196294;
-  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
-}
-[type="checkbox"]:hover {
-  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
-  cursor: pointer;
-}
-
 
 /*--------------------------------------------------------------
 # survay / 질문
