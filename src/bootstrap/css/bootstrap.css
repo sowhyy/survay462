@@ -19,7 +19,7 @@
   --gok-blue-50: #e1eef4;
 
   --gok-red-900: #c90016;
-  --gok-bed-700: #e4032e;
+  --gok-red-700: #e4032e;
   --gok-red-500: #ff2932;
   --gok-red-200: #f9979b;
   --gok-red-50: #ffebef;
@@ -1701,8 +1701,6 @@ pre code {
 
 
 /* signin */
-
-
 .form-signin {
   width: 100%;
   max-width: 420px;
@@ -1736,6 +1734,7 @@ pre code {
   border-radius: .25rem;
   transition: all .1s ease-in-out;
   text-align: left;
+
 }
 
 .form-label-group input::-webkit-input-placeholder {
@@ -1821,8 +1820,6 @@ pre code {
 }
 
 /*  form  */
-
-
 .form-control {
   display: block;
   width: 100%;
@@ -1837,6 +1834,7 @@ pre code {
   border: 1px solid #ced4da;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2008,19 +2006,20 @@ textarea.form-control {
 }
 
 .form-check-input {
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 26px;
+  /* position: absolute; */
+  margin-left: 8px;
+  margin-right: 4px;
 }
 
 .form-check-input[disabled] ~ .form-check-label,
 .form-check-input:disabled ~ .form-check-label {
   color: #575757;
+  
 }
 
 .form-check-label {
-  margin-bottom: 0;
-  margin-left: 8px;
+  margin: 5px 0;
+  /* margin-left: 8px; */
 }
 
 .form-check-inline {
@@ -2029,13 +2028,13 @@ textarea.form-control {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 0;
-  margin-right: 12px;
+  margin-right: 6px;
 }
 
 .form-check-inline .form-check-input {
   position: static;
   margin-top: 0;
-  margin-right: 8px;
+  margin-right: 6px;
   margin-left: 0;
 }
 
@@ -3617,7 +3616,6 @@ input[type="button"].btn-block {
   min-height: 1.5rem;
   padding-left: 1.5rem;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
   print-color-adjust: exact;
 }
 
@@ -4928,13 +4926,13 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
-  border-color: #b8daff;
+  color: #003764;
+  background-color: #e1eef4;
+  border-color: #8cbbd5;
 }
 
 .alert-primary hr {
-  border-top-color: #9fcdff;
+  border-top-color: #8cbbd5;
 }
 
 .alert-primary .alert-link {
@@ -8048,6 +8046,12 @@ button.bg-dark:focus {
 .pt-5,
 .py-5 {
   padding-top: 32px !important;
+}
+.pt-6 {
+  padding-top: 60px !important;
+}
+.pt-8 {
+  padding-top: 80px !important;
 }
 .pt-10 {
   padding-top: 100px !important;
