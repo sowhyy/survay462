@@ -32,11 +32,11 @@
       </div>
       <!-- ======= 토클 / 아이콘 ======= -->
       <div class="navicon d-flex align-items-center">
-        <div class="custom-control custom-switch mr-3">
-          <label class="custom-control-label" for="customSwitch1"></label>
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" aria-label="..." />
+        <div class="form-check form-switch mr-3">
+          <label class="form-check-label" for="toggleSwitch"></label>
+          <input class="form-check-input" type="checkbox" id="toggleSwitch" checked="" aria-label="..." />
         </div>
-        <a href="signin.html">
+        <a href="login.html">
           <i class="bi bi-person-fill" style="font-size: 18px; color: #fff" alt="로그인"></i></a>
       </div>
     </nav>
@@ -72,327 +72,371 @@
   </section>
 
   <main>
-  <!-- 설문 구분 / -->
+    <!-- 구분 복지  -->
     <section id="object" class="container pt-2">
-      <div class="object-header mb-1"> <span class="badge badge-object">복지부분</span></div>
+      <div class="object-header mb-1">
+        <span class="badge badge-object">
+          복지부분
+        </span>
+      </div>
       <div class="object-body alert alert-object">
-        <span class="badge badge-object">목적</span>
-        공무원들에게 필요한 복지 서비스가 무엇인지 파악하고, 향후 삶의 질
-        향상을 위한 기초자료로 활용하기 위해 조사합니다.
+        <span class="badge badge-object">
+          목적
+        </span>
+        공무원들에게 필요한 복지 서비스가 무엇인지 파악하고,
+        향후 삶의 질 향상을 위한 기초자료로 활용하기 위해 조사합니다.
       </div>
     </section>
 
-  <!-- 체크 / 다중 -->
-  <section class="container pt-3">
-    <section id="survay" class="form-group">
-      <div class="survay-header container" for="checkboxes">
-        <span>
-          1. 귀하께서 가장 희망하는 연금복지사업을 선택하여 주시기 바랍니다.  (2개까지 선택 가능)
-        </span>
-      </div>
-      <div class="row survay-body p-4">
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-1">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-1" value="1" /> 
-            <span>
-              ① 주택분양
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-2">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-2"
-            value=" 2" /> 
-            <span>
-              ② 임대주택
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-3">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-3"
-            value=" 3" />
-            <span>
-              ③ 학자금 대부
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-4">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-4" value="4" />
-            <span>
-              ④ 가계/주택자금 대부 및 융자알선
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-5">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-5" value="5" />
-            <span>
-              ⑤ 리조트 등 후생복지시설
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-6">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-6" value="6" />
-            <span>
-              ⑥ 의료비 지원
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-7">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-7" value="7" />
-            <span>
-              ⑦ 간병·재활급여 등 재해보상
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-8">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-8" value="8" />
-            <span>
-              ⑧ 생명․상해보험
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-9">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-9" value="9" />
-            <span>
-              ⑨ 제휴복지(육아도우미, 상조 등)
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-10">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-10" value="10" />
-            <span>
-              ⑩ 기타
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-11">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-11" value="11" />
-            <span>
-              11
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-12">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-12" value="12" />
-            <span>
-              12
-            </span>
-          </label>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <!-- 체크 / 다중 / 기타, 주관식 -->
-  <section class="container pt-3">
-    <section id="survay" class="form-group">
-      <div class="survay-header container" for="checkboxes">
-        <span>
-          2. 귀하께서는 위의 연금복지 사업 외에 향후 어떠한 복지 서비스를 늘려야 한다고 생각하십니까? (2개까지 선택 가능)
-        </span>
-      </div>
-      <div class="row survay-body p-4">
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-1">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-1" value="1" /> 
-            <span>
-              ① 자기계발 지원(교육비 등)  
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-2">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-2"
-            value=" 2" /> 
-            <span>
-              ② 업무에 필요한 장비 지원
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-3">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-3"
-            value=" 3" />
-            <span>
-              ③ 고충상담 및 심리상담
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-4">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-4" value="4" />
-            <span>
-              ④ 건강 지원(운동비 등)  
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-5">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-5" value="5" />
-            <span>
-              ⑤ 편의시설(휴게공간 등)
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-6">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-6" value="6" />
-            <span>
-              ⑥ 경조사 지원
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-7">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-7" value="7" />
-            <span>
-              ⑦ 여가생활 지원(리조트 숙박권 등)
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-8">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-8" 
-            onClick="this.form.checkboxesdis.disabled=false" value="8" />
-            <span>
-              ⑧ 기타 
-            </span>
-            <input type="text" name="testdis">
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-9">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-9" value="9" />
-            <span>
-              9
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-10">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-10" value="10" />
-            <span>
-              10
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-11">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-11" value="11" />
-            <span>
-              11
-            </span>
-          </label>
-        </div>
-        <div class="survay-body-form col-lg-4 col-md-6">
-          <label class="form-check-label" for="checkboxes-12">
-            <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-12" value="12" />
-            <span>
-              12
-            </span>
-          </label>
-        </div>
-      </div>
-    </section>
-  </section>
-  <!-- 라디오 / 단일 -->
+    <!-- ANS_CN_1 -->
     <section class="container pt-3">
       <section id="survay" class="form-group">
-        <div class="survay-header container" for="radios">
-          Inline Radios
-        </div>
-        <div class="row survay-body p-4">
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-1">
-              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
-              1
-            </label>
+        <form>
+          <div class="survay-header container" for="check">
+            <span>
+              1. 귀하께서 가장 희망하는 연금복지사업을 선택하여 주시기 바랍니다. (2개까지 선택 가능)
+            </span>
           </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-2">
-              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
-              2
-            </label>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-1">
+                ① 주택분양
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-2">
+                ② 임대주택
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-3">
+                ③ 학자금 대부
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-4">
+                ④ 가계/주택자금 대부 및 융자알선
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-5">
+                ⑤ 리조트 등 후생복지시설
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-6">
+                ⑥ 간병·재활급여 등 재해보상
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-7">
+                ⑦ 생명․상해보험
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-8">
+                ⑧ 제휴복지(육아도우미, 상조 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-9">
+                ⑨ 기타
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+            </div>
           </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-3">
-              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
-              3
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-4">
-              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
-              4
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-5">
-              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
-              5
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-6">
-              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
-              6
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-7">
-              <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
-              7
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-8">
-              <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
-              8
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-9">
-              <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
-              9
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-10">
-              <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
-              10
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-11">
-              <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
-              11
-            </label>
-          </div>
-          <div class="survay-body-form col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-12">
-              <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
-              12
-            </label>
-          </div>
-        </div>
+        </form>
       </section>
     </section>
 
-  <!-- 하단 버튼 그룹-->
+    <!-- ANS_CN_2 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="check">
+            <span>
+              2. 귀하께서는 위의 연금복지 사업 외에 향후 어떠한 복지 서비스를 늘려야 한다고 생각하십니까? (2개까지 선택 가능)
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-1">
+                ① 자기계발 지원(교육비 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-2">
+                ② 업무에 필요한 장비 지원
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-3">
+                ③ 고충상담 및 심리상담
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-4">
+                ④ 건강 지원(운동비 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-5">
+                ⑤ 편의시설(휴게공간 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-6">
+                ⑥ 경조사 지원
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-7">
+                ⑦ 여가생활 지원(리조트 숙박권 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-8">
+                ⑧ 기타
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+              <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
+            </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_3 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              3. 귀하께서 선호하는 퇴직급여의 종류는 무엇입니까?
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 연금
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 일시금
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 연금+일시금
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_4 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="check">
+            <span>
+              4. 다음 중 귀하께서 가장 선호하는 여가시간 활용방법은 무엇입니까? (2개까지 선택 가능)
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-1">
+                ① 영상시청(TV, 인터넷방송 등 시청)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-2">
+                ② 문화예술 관람(연극, 영화, 미술전시회 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-3">
+                ③ 문화예술 참여(독서토론, 미술활동, 사진촬영 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-4">
+                ④ 스포츠 관람
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-5">
+                ⑤ 스포츠 활동
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-6">
+                ⑥ 관광(국내·해외여행, 캠핑 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-7">
+                ⑦ 컴퓨터 게임, 인터넷 검색 등
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-8">
+                ⑧ 자기개발 활동(독서, 기술·자격증 취득 공부 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-9">
+                ⑨ 휴식(수면, 사우나 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-10">
+                ⑩ 사회활동 및 기타활동(봉사활동, 종교활동, 사교활동 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
+            </div>
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="check-11">
+                ⑪ 기타
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- 구분 복무  -->
+    <section id="object" class="container pt-2">
+      <div class="object-header mb-1">
+        <span class="badge badge-object">
+          복무사항
+        </span>
+      </div>
+      <div class="object-body alert alert-object">
+        <span class="badge badge-object">목적</span>
+        초과근무, 연가, 유연근무 사용 현황을 파악하여, 공무원 복무제도 개선을 위한 기초자료로 활용하기 위해 조사합니다.
+      </div>
+    </section>
+
+    <!-- ANS_CN_5 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              5. 귀하의 지난 3개월(’23.5.1. ~ 7.31.)간 평균적인 1일 초과근무 시간은 얼마나 되십니까?
+            </span>
+            <figcaption class="figure-caption">
+              (시스템 등록 여부에 관계없이 정규근무시간(하루 평균 8시간) 이전․이후 실제로 근무한 시간으로, 식사 시간 등은 제외)<br>
+              (근무경력 3개월 미만인 경우 지난 1개월간 평균적인 1일 초과근무 시간 기재)
+            </figcaption>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 없음
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 약 1시간 이내
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 약 1~2시간 이내
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④ 약 2~3시간 이내
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤ 약 3~4시간 이내
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-6">
+                ⑥ 약 4시간 이상
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_6 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              6. 귀하께서는 지난해 1년(’22.1.1 ~ 12.31) 동안 부여받은 연가를 얼마나 사용하셨습니까?
+            </span>
+            <figcaption class="figure-caption">
+              ※ 2023년 신규임용된 공무원은 활용할 계획으로 작성 / 저축한 연가 및 보상받은 연가일수는 사용연가에서 제외
+            </figcaption>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-text col-lg-12">
+              <label class="form-control-label" for=text-1">
+                ① 부여받은 연가 일수 :
+              </label>
+              <input class="form-control col-2" type="text" name="texts" id="texts-1" placeholder=""> 일
+            </div>
+            <div class="form-text col-lg-12">
+              <label class="form-control-label" for=text-1">
+                ② 사용한 연가 일수 : 
+              </label>
+              <input class="form-control col-2" type="text" name="texts" id="texts-2" placeholder=""> 일
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- 하단 버튼 그룹-->
     <section class="container pt-3 mb-5">
       <section id="btn-page" class="d-flex justify-content-center">
         <div class="btn-page">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary mr-2">
             <i class="bi bi-chevron-left"></i> 이전페이지
           </button>
           <button type="button" class="btn btn-primary">
@@ -424,10 +468,10 @@
             </div>
           </div>
           <!-- ======= Footer / 우측 ======= -->
-          <div class="col-md-6">
+          <div class="col-ml-6">
             <div class="footer-content">
               <div class="footer-head">
-                <h3>인사혁신처</h3>
+                <h3><img src="img/mpm_logo.png" style="height: 35px" alt="공무원 총조사 로고" /></h3>
                 <p>
                   세종특별자치시 정부세종2청사 13 (나성동772) 17-2동 3층
                 </p>

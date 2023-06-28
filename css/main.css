@@ -175,7 +175,15 @@ footer {
 # login
 --------------------------------------------------------------*/
 
-#signin {
+/* signin */
+.form-login {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+#login {
   width: 100%;
   height: 76vh;
   overflow: hidden;
