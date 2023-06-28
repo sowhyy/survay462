@@ -92,9 +92,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system,
-  BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-  "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -1709,18 +1707,21 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.table th,
-.table td {
+.table td label {
+  margin: 0;
+}
+.table th, .table td {
   padding: 0.75rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #dee2e6;
 }
 
 .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .table tbody + tbody {
@@ -5362,9 +5363,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert {
   position: relative;
   padding: 12px 20px;
-  margin-bottom: 16px;
   border: 1px solid transparent;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 .alert-heading {
@@ -5403,13 +5404,13 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-secondary {
-  color: #383d41;
-  background-color: #e2e3e5;
-  border-color: #d6d8db;
+  color: #575757;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
 }
 
 .alert-secondary hr {
-  border-top-color: #c8cbcf;
+  border-top-color: #e7e7e7;
 }
 
 .alert-secondary .alert-link {
