@@ -62,7 +62,7 @@
         </p>
         <hr />
         <p class="mb-0">
-          공무원 총조사는 공무원 보수 현실화, 주거안정 사업, 
+          공무원 총조사는 공무원 보수 현실화, 주거안정 사업,
           사이버 외국어 교육과정 개발 등 각종 인사 및 복지제도 개선 등에 활용하기 위한 총조사입니다.
         </p>
       </div>
@@ -445,16 +445,16 @@
           <table class="table">
             <thead class="bg-light">
               <tr>
-                <th scope="col" rowspan="2">유연근무 유형</th>
-                <th scope="col" colspan="6">평균 사용 횟수</th>
+                <th scope="col" rowspan="2" class="col-2">유연근무 유형</th>
+                <th scope="col" colspan="6" class="col-6">평균 사용 횟수</th>
               </tr>
               <tr>
-                <th scope="col">없음</th>
-                <th scope="col">월1회이하</th>
-                <th scope="col">월 2~3회</th>
-                <th scope="col">주 1회</th>
-                <th scope="col">주 2~4회</th>
-                <th scope="col">주 5회</th>
+                <th scope="col" class="col-1">없음</th>
+                <th scope="col" class="col-1">월1회이하</th>
+                <th scope="col" class="col-1">월 2~3회</th>
+                <th scope="col" class="col-1">주 1회</th>
+                <th scope="col" class="col-1">주 2~4회</th>
+                <th scope="col" class="col-1">주 5회</th>
               </tr>
             </thead>
             <tbody>
@@ -652,6 +652,333 @@
       </section>
     </section>
 
+    <!-- 구분 일반  -->
+    <section id="object" class="container pt-2">
+      <div class="object-header mb-1">
+        <span class="badge badge-object">
+          일반사항
+        </span>
+      </div>
+      <div class="object-body alert alert-object">
+        <span class="badge badge-object">목적</span>
+        공무원의 지역별 인구분포 및 업무유형 파악 등 인사운영을 위한 기초자료로 활용하기 위해 조사합니다.
+      </div>
+    </section>
+
+    <!-- ANS_CN_8 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              8. 귀하의 주민등록주소와 관계없이 실제 거주지 및 현재 근무지를 시·군·구까지 기재해 주시기 바랍니다.
+            </span>
+            <figcaption class="figure-caption">
+              * 예) 예시 : 서울특별시 종로구, 충청북도 영동군 / ‘세종특별자치시’는 시·군·구 미입력
+            </figcaption>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-text col-lg-12">
+              <label class="form-control-label" for="texts-1 texts-2">
+                ① 실제 거주지:
+              </label>
+              <input class="form-control col-2" type="text" name="texts" id="texts-1" placeholder=""> (시·도)
+              <input class="form-control col-2" type="text" name="texts" id="texts-2" placeholder=""> (시·군·구)
+              <span class="ml-2" style="font-size: small;">
+                * 주말부부의 경우 주중에 거주하는 장소를 기준으로 작성합니다.
+              </span>
+            </div>
+            <div class="form-text col-lg-12">
+              <label class="form-control-label" for="texts-3 texts-4">
+                ② 현재 근무지:
+              </label>
+              <input class="form-control col-2" type="text" name="texts" id="texts-3" placeholder=""> (시·도)
+              <input class="form-control col-2" type="text" name="texts" id="texts-4" placeholder=""> (시·군·구)
+              <span class="ml-2" style="font-size: small;">
+                * 파견근무 중인 경우는 원소속기관의 주소를 기준으로 작성합니다.
+              </span>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_9 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              9. 귀하께서 현재 담당하시는 가장 주된 업무의 유형은 무엇입니까?
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 정책기획
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 대민업무
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 조사·연구
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④ 치안·교정 등 현장근무
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤ 사업·집행
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-6">
+                ⑥ 내부지원·관리
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-7">
+                ⑦ 교육
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-8">
+                ⑧ 기타
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
+            </div>
+
+        </form>
+      </section>
+    </section>
+
+    <!-- 구분 통근  -->
+    <section id="object" class="container pt-2">
+      <div class="object-header mb-1">
+        <span class="badge badge-object">
+          통근 부문
+        </span>
+      </div>
+      <div class="object-body alert alert-object">
+        <span class="badge badge-object">목적</span>
+        공무원 통근 및 주말부부 현황 등을 파악하여 일과 삶의 균형을 위한 기초자료로 활용하기 위해 조사합니다.
+      </div>
+    </section>
+
+    <!-- ANS_CN_10 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              10. 귀하의 주중 거주하는 장소에서 직장까지의 통근시간(출근 기준)은 얼마입니까?
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 30분 미만
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 30분 이상~1시간 미만
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 1시간 이상~1시간 30분 미만
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④ 1시간 30분 이상~2시간 미만
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤ 2시간 이상
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_11 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="check">
+            <span>
+              11. 귀하께서 거주하는 장소에서 직장으로 출근할 때 이용하는 가장 주된 통근 수단을 선택하여 주시기 바랍니다.(2개까지 선택가능)
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-1">
+                ① 도보
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-2">
+                ② 시내·마을버스
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-3">
+                ③ 전철(지하철)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-4">
+                ④ 승용차
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-5">
+                ⑤ 택시
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-6">
+                ⑥ 통근버스
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-7">
+                ⑦ 자전거
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-8">
+                ⑧ 고속·시외버스
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-9">
+                ⑨ 기차(KTX 등)
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-10">
+                ⑩ 기타
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_12 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              12. 귀하께서는 청사 이전, 소속기관 발령, 자녀교육 등의 사유로 가족과 따로 살고 있습니까? (주말에만 가족과 함께 사는 경우도 ‘예’로 응답)
+            </span>
+            <figcaption class="figure-caption">
+              ※ 배우자가 따로 사는 경우는 ‘아니요’로 응답하고, 본인이 따로 살고 있는 경우만 ‘예’로 응답
+            </figcaption>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 예
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 아니요 ➡ 14번으로 이동
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- ANS_CN_13 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+          <div class="survay-header container" for="radios">
+            <span>
+              13. 귀하께서 가족과 따로 살고 있는 경우, 귀하의 주거 형태는 무엇입니까? 
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 자기집
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 전세 
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 월세 
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④ 관사 
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤ 하숙
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑥ 기타(반전세 등)
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
     <!-- 하단 버튼 그룹-->
     <section class="container pt-3 mb-5">
       <section id="btn-page" class="d-flex justify-content-center">
@@ -708,7 +1035,7 @@
   </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-  <i class="bi bi-arrow-up-short"></i></a>
+    <i class="bi bi-arrow-up-short"></i></a>
   <!-- Custom scripts -->
   <script type="text/javascript" src="js/main.js"></script>
   <!-- Vendor CSS Files -->
@@ -716,4 +1043,5 @@
   <!-- Bootstrap JS Files -->
   <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
