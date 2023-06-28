@@ -25,21 +25,20 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header class="fixed-top d-flex align-items-center">
-    <nav class="container d-flex  align-items-center">
+    <nav class="container d-flex align-items-center">
       <div class="logo mx-auto">
         <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
       </div>
       <!-- ======= 토클 / 아이콘 ======= -->
       <div class="navicon d-flex align-items-center">
-        <div class="custom-control custom-switch mr-3">
-          <label class="custom-control-label" for="customSwitch1"></label>
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" aria-label="...">
+        <div class="form-check form-switch mr-3">
+          <label class="form-check-label" for="toggleSwitch"></label>
+          <input class="form-check-input" type="checkbox"  id="toggleSwitch" checked="" aria-label="..." />
         </div>
         <a href="login.html">
-        <i class="bi bi-person-fill" style="font-size: 18px; color:#fff" alt="로그인"></i></a>
+          <i class="bi bi-person-fill" style="font-size: 18px; color: #fff" alt="로그인"></i></a>
       </div>
     </nav>
   </header>
@@ -89,202 +88,406 @@
   </section>
 
 
-  <!-- ======= Main ======= -->
 
+  <!-- ======= Main ======= -->
   <section class="container">
-    <section class=" pt-2">
+    <section class="pt-8">
       <!-- =======진행 사항 ======= -->
       <div class="progress mt-5 mb-3" style="height: 15px">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
           aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
       <!-- ======= 상단 공지 ======= -->
-      <div class="alert alert-info" role="alert">
+      <div class="alert alert-primary" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="alert-heading">Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
-          so that you can see how spacing within an alert works with this kind of content.</p>
-        <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        <h4 class="alert-heading mt-2">2023년 12차 공무원총조사</h4>
+        <p>
+          1969년 시작하여 1978년부터 5년 주기로 수행, 2023년 제 12차 총조사
+        </p>
+        <hr />
+        <p class="mb-0">
+          공무원 총조사는 공무원 보수 현실화, 주거안정 사업, 
+          사이버 외국어 교육과정 개발 등 각종 인사 및 복지제도 개선 등에 활용하기 위한 총조사입니다.
+        </p>
       </div>
     </section>
   </section>
 
   <main>
-    <!-- ======= 라디오  -->
+    <!-- 설문 구분 / -->
+    <section id="object" class="container pt-2">
+      <div class="object-header mb-1">
+        <span class="badge badge-object">
+          부분
+        </span>
+      </div>
+      <div class="object-body alert alert-object">
+        <span class="badge badge-object">목적</span>
+        내용
+      </div>
+    </section>
+
+    <!-- 체크 / 다중 -->
     <section class="container pt-3">
       <section id="survay" class="form-group">
-        <div class="survay-header container bg-light" for="radios">
-          Inline Radios
+        <form>
+          <div class="survay-header container" for="check">
+            <span>
+              ✅ 체크 / 다중 / 문제
+            </span>
+          </div>
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-1">
+                ① 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-2">
+                ② 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-3">
+                ③ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-4">
+                ④ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-5">
+                ⑤ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-6">
+                ⑥ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-7">
+                ⑦ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-8">
+                ⑧ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-9">
+                ⑨ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-10">
+                ⑩ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-11">
+                ⑪ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-12">
+                ⑫ 
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-12" value="12" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- 체크 / 다중 / 기타, 주관식 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+        <div class="survay-header container" for="check">
+          <span>
+            ✅ 체크 / 다중 / 기타, 주관식 / 문제
+          </span>
         </div>
-        <div class="row survay-body">
-          <div class="col-lg-3 col-md-6">
+        <div class="row survay-body p-4">
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-1">
+              ① 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-2">
+              ② 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-3">
+              ③ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-4">
+              ④ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-5">
+              ⑤ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-6">
+              ⑥ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-7">
+              ⑦ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-8">
+              ⑧ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-9">
+              ⑨ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-10">
+              ⑩ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-11">
+              ⑪ 
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
+          </div>
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="check-12">
+              ⑫ 기타
+            </label>
+            <input class="form-check-input" type="checkbox" name="check" id="check-12" value="12" />
+            <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
+          </div>
+        </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- 라디오 / 단일 -->
+    <section class="container pt-3">
+      <section id="survay" class="form-group">
+        <form>
+        <div class="survay-header container" for="radios">
+          <span>
+            🔵 라디오 / 단일 / 문제
+          </span>
+        </div>
+        <div class="row survay-body p-4">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-1">
-              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1">
-              1
+              ① 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-2">
-              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2">
-              2
+              ② 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-3">
-              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3">
-              3
+              ③ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-4">
-              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4">
-              4
+              ④ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-5">
-              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5">
-              5
+              ⑤ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-6">
-              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6">
-              6
+              ⑥ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-7">
-              <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7">
-              7
+              ⑦ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-8">
-              <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8">
-              8
+              ⑧ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-9">
-              <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9">
-              9
+              ⑨ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-10">
-              <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10">
-              10
+              ⑩ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-11">
-              <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11">
-              11
+              ⑪ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="form-check col-lg-4 col-md-6">
             <label class="form-check-label" for="radios-12">
-              <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12">
-              12
+              ⑫ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
           </div>
         </div>
+        </form>
       </section>
     </section>
 
-
-    <!-- Multiple Checkboxes (inline) -->
+    <!-- 라디오 / 단일 / 기타, 주관식 -->
     <section class="container pt-3">
       <section id="survay" class="form-group">
-        <div class="survay-header container bg-light" for="checkboxes">
-          Inline Checkboxes
+        <form>
+        <div class="survay-header container" for="radios">
+          <span>
+            🔵 라디오 / 단일 / 기타, 주관식 / 문제
+          </span>
         </div>
-        <div class="row survay-body">
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-1">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-1" value="1">
-              1
+        <div class="row survay-body p-4">
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-1">
+              ① 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-2">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-23value=" 2">
-              2
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-2">
+              ② 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-3">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-3 value=" 3">
-              3
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-3">
+              ③ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-4">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-4" value="4">
-              4
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-4">
+              ④ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-5">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-5" value="5">
-              5
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-5">
+              ⑤ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-6">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-6" value="6">
-              6
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-6">
+              ⑥ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-7">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-7" value="7">
-              7
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-7">
+              ⑦ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-8">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-8" value="8">
-              8
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-8">
+              ⑧ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-9">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-9" value="9">
-              9
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-9">
+              ⑨ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-10">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-10" value="10">
-              10
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-10">
+              ⑩ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-11">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-11" value="11">
-              11
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-11">
+              ⑪ 
             </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <label class="form-check-label" for="checkboxes-12">
-              <input class="form-check-input" type="checkbox" name="checkboxes" id="checkboxes-12" value="12">
-              12
+          <div class="form-check col-lg-4 col-md-6">
+            <label class="form-check-label" for="radios-12">
+              ⑫ 
+            </label>
+            <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
+            <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
             </label>
           </div>
         </div>
+        </form>
       </section>
     </section>
 
 
+
+
+    <!-- 하단 버튼 그룹-->
     <section class="container pt-3 mb-5">
       <section id="btn-page" class="d-flex justify-content-center">
         <div class="btn-page">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary mr-2">
             <i class="bi bi-chevron-left"></i> 이전페이지
           </button>
           <button type="button" class="btn btn-primary">
@@ -304,20 +507,25 @@
           <div class="col-md-4">
             <div class="footer-content d-flex">
               <div class="footer-head">
-                <div class="footer-logo">
-                  <h2>공무원총조사</h2>
+                <div class="footer-logo mt-5">
+                  <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
                 </div>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                  eaque ipsa quae ab illo inventore veritatis.</p>
+                <p class="mt-3">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, eaque ipsa
+                  quae ab illo inventore veritatis.
+                </p>
               </div>
             </div>
           </div>
           <!-- ======= Footer / 우측 ======= -->
-          <div class="col-md-6">
+          <div class="col-ml-6">
             <div class="footer-content">
               <div class="footer-head">
-                <h3>인사혁신처</h3>
-                <p>세종특별자치시 정부세종2청사 13 (나성동772) 인사혁신처 3층 30128</p>
+                <h3><img src="img/mpm_logo.png" style="height: 35px" alt="공무원 총조사 로고" /></h3>
+                <p>
+                  세종특별자치시 정부세종2청사 13 (나성동772) 17-2동 3층
+                </p>
                 <div class="footer-contacts">
                   <p><span>Time:</span> 9am-6pm</p>
                   <p><span>Tel:</span> +123 456 789</p>
@@ -331,14 +539,12 @@
   </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i></a>
-  <script type="text/javascript" src="js/main.js"></script>
-  <!-- Bootstrap JS Files -->
-  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
-  <!-- Vendor CSS Files -->
+  <i class="bi bi-arrow-up-short"></i></a>
   <!-- Custom scripts -->
-
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- Vendor CSS Files -->
+  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JS Files -->
+  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
