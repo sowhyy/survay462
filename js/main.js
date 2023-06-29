@@ -133,3 +133,5 @@ const instance = new Grid({
 
 instance.resetData(newData); // Call API of instance's public method
 Grid.applyTheme("striped"); // Call API of static method
+
+

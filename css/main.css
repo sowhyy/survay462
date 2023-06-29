@@ -114,26 +114,22 @@ footer {
   z-index: 1;
 }
 .footer-area {
-  background: rgba(248, 248, 248, 0.5);
-  opacity: 0.8;
+  background: #f8f8f8;
 }
 
 .footer-logo h2 {
   margin-top: 40px;
   margin-bottom: 20px;
-  color: var(--gok-Blue-900);
   font-size: 30px;
   font-weight: 600;
 }
 
 .footer-head h3 {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  color: var(--gok-Blue-900);
 }
 
 .footer-contacts p span {
-  color: var(--gok-Blue-900);
   font-weight: 600;
   line-height: 0.5;
 }
@@ -334,13 +330,45 @@ span {
 
 #survay .survay-header {
   padding: 16px;
+  padding-left: 24px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 18px;
   font-weight: 600;
   background-color: #f8f8f8;
 }
+
 #survay .survay-body span {
   font-size: 16px;
   font-weight: 400;
 }
+
+
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
+.table-side{
+  font-size: 14px;
+}
+.table th, .table td, td, th {
+  min-width: 60px;
+  vertical-align: middle;
+}
+
+
+select {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  border: 1px solid #ced4da;
+}
+
+select:focus {
+  color: #575757;
+  background-color: rgba(255, 235, 239,.5);
+  border-color: #f5b4b2;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(235, 104, 100, .25)
+}
+
