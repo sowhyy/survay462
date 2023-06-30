@@ -9,13 +9,11 @@ header {
   z-index: 997;
   background: rgba(0, 55, 100, 1);
 }
-
 header .header-scrolled {
   height: 60px;
   background: #003764;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
-
 header .logo {
   margin: 0;
   padding: 0;
@@ -24,7 +22,6 @@ header .logo {
 header .logo img {
   margin-top: 5px;
 }
-
 header .logo:hover {
   filter: invert(80%);
 }
@@ -43,13 +40,11 @@ header .logo:hover {
   overflow: hidden;
   position: relative;
 }
-
 @media (max-height: 500px) {
   #hero {
     height: 150vh;
   }
 }
-
 #hero .carousel,
 #hero .carousel-inner,
 #hero .carousel-item,
@@ -60,18 +55,15 @@ header .logo:hover {
   left: 0;
   bottom: 0;
 }
-
 #hero .carousel-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 #hero .carousel-item::before {
   content: '';
   background-color: rgba(0, 55, 100, 0.5);
 }
-
 #hero .carousel-caption {
   display: flex;
   justify-content: center;
@@ -80,7 +72,6 @@ header .logo:hover {
   bottom: 0;
   text-align: center;
 }
-
 @media (max-width: 768px) {
   #hero h5 {
     font-size: 20px;
@@ -105,39 +96,65 @@ header .logo:hover {
     line-height: 1.2;
   }
 }
+/*--------------------------------------------------------------
+# survay / 질문
+--------------------------------------------------------------*/
+#survay {
+  border: 1px solid #e1eef4;
+  border-radius: 8px;
+}
+#survay .survay-header {
+  padding: 16px;
+  padding-left: 24px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f8f8f8;
+}
+#survay .survay-body span {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
+.table-side{
+  font-size: 14px;
+  text-align: left;
+}
+.table th, .table td, td, th {
+  min-width: 60px;
+  vertical-align: middle;
+}
+
+select {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  border: 1px solid #ced4da;
+}
+select:focus {
+  color: #575757;
+  background-color: rgba(255, 235, 239,.5);
+  border-color: #f5b4b2;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(235, 104, 100, .25)
+}
 
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
-
 footer {
-  z-index: 1;
-}
-.footer-area {
   background: #f8f8f8;
 }
-
-.footer-logo h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.footer-head h3 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.footer-contacts p span {
-  font-weight: 600;
-  line-height: 0.5;
-}
-
 .footer-contacts p {
-  line-height: 0.5;
+  line-height: 1;
 }
-
+/*--------------------------------------------------------------
+# back-to-top
+--------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -151,18 +168,15 @@ footer {
   transition: all 0.4s;
   border-radius: 50px;
 }
-
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
 }
-
 .back-to-top:hover {
   background: #196294;
   color: #fff;
 }
-
 .back-to-top .active {
   visibility: visible;
   opacity: 1;
@@ -170,26 +184,21 @@ footer {
 /*--------------------------------------------------------------
 # login
 --------------------------------------------------------------*/
-
-/* signin */
 .form-login {
   width: 100%;
   max-width: 420px;
   padding: 15px;
   margin: auto;
 }
-
 #login {
   width: 100%;
   height: 76vh;
   overflow: hidden;
   position: relative;
 }
-
 /*--------------------------------------------------------------
 # toast / grid / sidebar
 --------------------------------------------------------------*/
-
 #toast-grid {
   width: 100%;
   height: 72vh;
@@ -204,15 +213,13 @@ footer {
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  background: #f8f8f8;
 }
-
 @media (max-width: 767.98px) {
   .sidebar {
     top: 5rem;
   }
 }
-
 .sidebar-sticky {
   position: relative;
   top: 0;
@@ -221,33 +228,27 @@ footer {
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
-
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 }
-
 .sidebar .side-nav-link {
   font-weight: 500;
-  color: #333;
+  color: #2f7eb0;
 }
-
 .sidebar .side-nav-link .feather {
   margin-right: 4px;
   color: #999;
 }
-
 .sidebar .side-nav-link.active {
-  color: #007bff;
+  color: #003764;
 }
-
 .sidebar .side-nav-link:hover .feather,
 .sidebar .side-nav-link.active .feather {
   color: inherit;
 }
-
 .sidebar-heading {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -256,7 +257,6 @@ footer {
 /*--------------------------------------------------------------
 # suvay / section / object
 --------------------------------------------------------------*/
-
 #object {
   width: 100%;
 }
@@ -268,12 +268,14 @@ footer {
   background-color: #f9979b;
   margin: 5px 0px;
 }
+
 .object-body {
   font-size: 14px;
 }
 .object-body > .badge-object {
   font-size: 16px;
 }
+
 .alert-object {
   font-weight: 500;
   line-height: 1;
@@ -281,94 +283,3 @@ footer {
   border: 1px solid #f9979b;
   padding: 10px 15px;
 }
-/* 
-
-[type='radio'],
-span {
-  vertical-align: middle;
-}
-[type='radio'] {
-  appearance: none;
-  border: 1px solid #575757;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  transition: border 0.5s all;
-}
-[type='radio']:checked {
-  background-color: #e4032e;
-  outline: 1px solid #e4032e;
-  border: 3px solid #fff;
-}
-[type='radio']:focus-visible {
-  outline-color: #196294;
-  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
-}
-[type='radio']:hover {
-  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
-  cursor: pointer;
-}
-[type='radio']:hover + span {
-  cursor: pointer;
-}
-
-[type='checkbox'] span {
-  vertical-align: middle;
-}
-[type='checkbox']:hover + span {
-  cursor: pointer;
-} */
-
-/*--------------------------------------------------------------
-# survay / 질문
---------------------------------------------------------------*/
-
-#survay {
-  border: 1px solid #e1eef4;
-  border-radius: 8px;
-}
-
-#survay .survay-header {
-  padding: 16px;
-  padding-left: 24px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #f8f8f8;
-}
-
-#survay .survay-body span {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-
-/*--------------------------------------------------------------
-# Table
---------------------------------------------------------------*/
-
-.table-side{
-  font-size: 14px;
-}
-.table th, .table td, td, th {
-  min-width: 60px;
-  vertical-align: middle;
-}
-
-
-select {
-  font-size: 14px;
-  border-radius: 4px;
-  padding: 2px 4px;
-  border: 1px solid #ced4da;
-}
-
-select:focus {
-  color: #575757;
-  background-color: rgba(255, 235, 239,.5);
-  border-color: #f5b4b2;
-  outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(235, 104, 100, .25)
-}
-

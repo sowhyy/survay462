@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,75 +14,74 @@
   <link href="src/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="src/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" as="style" crossorigin
-    href="src/pretendard_variable/pretendardvariable.css" />
+  <link rel="stylesheet" as="style" crossorigin href="src/pretendard_variable/pretendardvariable.css" />
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
-  <header class="fixed-top d-flex align-items-center">
-    <nav class="container d-flex  align-items-center">
+  <header class="fixed-top d-flex justify-content-md-center">
+    <nav class="container d-flex align-items-center">
       <div class="logo mx-auto">
         <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
       </div>
       <!-- ======= 토클 / 아이콘 ======= -->
       <div class="navicon d-flex align-items-center">
-        <div class="custom-control custom-switch mr-3">
-          <label class="custom-control-label" for="customSwitch1"></label>
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" aria-label="...">
+        <div class="form-check form-switch mr-3">
+          <label class="form-check-label" for="toggleSwitch"></label>
+          <input class="form-check-input" type="checkbox" id="toggleSwitch" checked="" aria-label="..." />
         </div>
-        <i class="bi bi-person-fill" style="font-size: 18px; color:#fff" alt="로그인"></i></a>
+        <a href="login.html">
+          <i class="bi bi-person-fill" style="font-size: 18px; color: #fff" alt="로그인"></i></a>
       </div>
     </nav>
   </header>
   <!-- End Header -->
 
-<main class="mr-5">
-  <section id="login container-fluid">
-    <div class="login-container pt-16">
+  <!-- ======= main ======= -->
+  <main class="mr-5">
+    <section id="login container-fluid">
+      <div class="login-container pt-16">
 
-      <form class="form-login mb-3">
-        <div class="text-center mb-4">
-          <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-            <label for="inputEmail">Email address</label>
-          </div>
+        <form class="form-login mb-3">
+          <div class="text-center mb-4">
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+              <label for="inputEmail">Email address</label>
+            </div>
 
-          <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-          </div>
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <label for="inputPassword">Password</label>
+            </div>
 
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
-      </form>
-    </div>
-  </section>
-</main>
-
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
 
 
   <!-- ======= Footer ======= -->
-  <footer>
-    <div class="fixed-bottom footer-area d-flex justify-content-center">
-      <div class="container">
-        <div class="row">
-          <!-- ======= Footer / 좌측 ======= -->
-          <div class="col-md-4">
-            <div class="footer-content d-flex">
-              <div class="footer-head">
-                <div class="footer-logo mt-5">
-                  <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
-                </div>
-                <p class="mt-2">
+  <footer class="fixed-bottom footer-area pt-2 pb-2">
+    <div class="container-fluid mt-3">
+      <div class="row justify-content-md-center">
+        <!-- ======= Footer / 좌측 ======= -->
+        <div class="col-4">
+          <div class="footer-content d-flex">
+            <div class="footer-head">
+              <div class="footer-logo1 mt-2 ">
+                <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
+              </div>
+              <div class="footer-contacts">
+                <p class="mt-3">
                   Sed ut perspiciatis unde omnis iste natus error sit
                   voluptatem accusantium doloremque laudantium, eaque ipsa
                   quae ab illo inventore veritatis.
@@ -89,33 +89,36 @@
               </div>
             </div>
           </div>
-          <!-- ======= Footer / 우측 ======= -->
-          <div class="col-ml-6">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h3><img src="img/mpm_logo.png" style="height: 35px" alt="공무원 총조사 로고" /></h3>
-                <p class="mb-2">
-                  세종특별자치시 정부세종2청사 13 (나성동772) 17-2동 3층
-                </p>
-                <div class="footer-contacts">
-                  <p class="mb-3"><span>Time:</span> 9am-6pm</p>
-                  <p class="mb-3"><span>Tel:</span> +123 456 789</p>
+        </div>
+        <!-- ======= Footer / 우측 ======= -->
+        <div class="col-4">
+          <div class="footer-content d-flex">
+            <div class="footer-head">
+              <div class="footer-logo2 mt-2">
+                <img src="img/mpm_logo.png" style="height: 35px" alt="공무원 총조사 로고" />
+                <div class="footer-contacts mt-3">
+                  <p class="mb-2">
+                    세종특별자치시 정부세종2청사 13 (나성동772) 17-2동 3층
+                  </p>
+                  <p class="mb-2"><span>Time:</span> 9am-6pm</p>
+                  <p class="mb-2"><span>Tel:</span> +123 456 789</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i></a>
+  <!-- Bootstrap JS Files -->
+  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- Vendor CSS Files -->
+  <script type="text/javascript" src="src/toast-ui.grid/tui-grid.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript" src="js/main.js"></script>
-  <!-- Vendor CSS Files -->
-  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-  <!-- Bootstrap JS Files -->
-  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

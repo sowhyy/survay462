@@ -1944,7 +1944,6 @@ pre code {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  margin-left: 8px;
   height: 21px;
   padding: 6px 12px;
   font-size: 16px;
@@ -3853,7 +3852,7 @@ input[type="button"].btn-block {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.custom-control {
+/* .custom-control {
   position: relative;
   z-index: 1;
   display: block;
@@ -4322,7 +4321,7 @@ input[type="button"].btn-block {
   .custom-select {
     transition: none;
   }
-}
+} */
 
 .nav {
   display: -ms-flexbox;
