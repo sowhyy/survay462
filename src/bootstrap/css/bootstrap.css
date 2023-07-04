@@ -178,7 +178,7 @@ small {
   font-size: 80%;
 }
 
-sub,
+
 sup {
   position: relative;
   font-size: 75%;
@@ -420,7 +420,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h6, .h6 {
@@ -1708,7 +1708,7 @@ pre code {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   color: #191919;
   text-align: center;
   vertical-align: middle;
@@ -1945,7 +1945,6 @@ pre code {
   vertical-align: middle;
   width: 100%;
   height: 21px;
-  /* padding: 6px 12px; */
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -1955,7 +1954,7 @@ pre code {
   border: 1px solid #ced4da;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1974,14 +1973,15 @@ pre code {
   background-color: rgba(255, 235, 239,.5);
   border-color: #f5b4b2;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(235, 104, 100, .25)
+  box-shadow: 0 0 0 4px rgba(235, 104, 100, .25);
+  padding-right: 4px;
 }
 
 .form-control::-webkit-input-placeholder {
   color: #575757;
   opacity: 1;
   min-width: 85px;
-  height: 1.5em;
+  height: 24px;
   margin: 0
 }
 
@@ -2095,21 +2095,6 @@ select.form-control[size], select.form-control[multiple] {
   border-radius: 5px;
 }
 
-
-
-textarea.form-control {
-  height: auto;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-text {
-  display: block;
-  margin-top: 4px;
-}
-
 .form-row {
   display: -ms-flexbox;
   display: flex;
@@ -2125,6 +2110,19 @@ textarea.form-control {
   padding-left: 5px;
 }
 
+textarea.form-control {
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-text {
+  display: block;
+  min-height: 32px;
+}
+
 .form-check {
   display: block;
   min-height: 32px;
@@ -2135,6 +2133,7 @@ textarea.form-control {
   margin-left: 8px;
   line-height: 32px;
   margin-top: 4px;
+  vertical-align: middle;
 }
 
 .form-check-reverse {
@@ -2145,16 +2144,17 @@ textarea.form-control {
 
 .form-check-reverse .form-check-input {
   float: right;
-  margin-right: -1.5em;
+  margin-right: -24px;
   margin-left: 0
 }
 
 .form-check-input {
   width: 16px;
   height: 16px;
-  margin-top: 4px;
-  margin-right: 5px;
-  vertical-align: bottom;
+  margin-right: 8px;
+  /* margin-top: 4px;
+  margin-right: 5px; */
+  vertical-align: middle;
   background-color: var(--bs-form-check-bg);
   background-image: var(--bs-form-check-bg-image);
   background-repeat: no-repeat;

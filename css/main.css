@@ -208,7 +208,7 @@ footer {
 /*--------------------------------------------------------------
 # survay / 질문
 --------------------------------------------------------------*/
-#survay {
+#survay .form-group {
   border: 1px solid #e1eef4;
   border-radius: 8px;
 }
@@ -226,8 +226,9 @@ footer {
   font-weight: 400;
   padding: 10px;
 }
-#survay .survay-body {
+.survay-body {
   padding: 10px;
+  vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
@@ -238,24 +239,27 @@ footer {
   font-size: 14px;
   text-align: left;
 }
-.table th, .table td, td, th {
-  min-width: 60px;
+.table td label {
   vertical-align: middle;
 }
-
+.table .form-check-input {
+  margin-right: 4px;
+}
+.table th, .table td, td, th {
+  min-width: 60px;
+}
 select {
   font-size: 14px;
   border-radius: 4px;
   padding: 0;
   border: 1px solid #ced4da;
-  text-align: center;
 }
 select:focus {
   color: #575757;
   background-color: rgba(255, 235, 239,.5);
   border-color: #f5b4b2;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(235, 104, 100, .25);
+  box-shadow: 0 0 0 4px rgba(235, 104, 100, .25);
 }
 
 /*--------------------------------------------------------------
@@ -270,16 +274,17 @@ select:focus {
 .badge-object {
   color: #fff;
   background-color: #e4032e;
-  margin: 5px 0px;
+  margin: 6px 0px;
 }
 
 .badge-object-sm {
   color: #fff;
-  background-color: rgba(228, 3, 46, .5);
+  background-color: rgba(228,3,46,.5);
   background-color: #f9979b;
   margin: 5px 0px;
   padding: 5px;
   font-size: 13px;
+  margin-right: 8px;
 }
 
 .object-body {
@@ -295,4 +300,13 @@ select:focus {
   background-color: #ffebef;
   border: 1px solid #f9979b;
   padding: 10px 15px;
+}
+
+sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: middle;
+  font-weight: 500;
+  margin-left: 10px;
 }
