@@ -269,8 +269,17 @@ select:focus {
 }
 .badge-object {
   color: #fff;
+  background-color: #e4032e;
+  margin: 5px 0px;
+}
+
+.badge-object-sm {
+  color: #fff;
+  background-color: rgba(228, 3, 46, .5);
   background-color: #f9979b;
   margin: 5px 0px;
+  padding: 5px;
+  font-size: 13px;
 }
 
 .object-body {
