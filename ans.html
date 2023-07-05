@@ -343,7 +343,7 @@
     <!-- ANS_CN_5 -->
     <section id="survay" class="container pt-3">
       <section class="form-group">
-        <div class="survay-header container" for="radios">
+        <div class="survay-header">
           <span>
             5. 귀하의 지난 3개월(’23.5.1. ~ 7.31.)간 평균적인 1일 초과근무 시간은 얼마나 되십니까?
           </span>
@@ -439,20 +439,20 @@
           </figcaption>
         </div>
 
-        <div class="survay-body p-4 table-responsive-sm">
-          <table class="table container-fluid">
+        <div class="survay-body py-4 table-responsive-sm">
+          <table class="table container">
             <thead class="bg-light">
               <tr>
-                <th rowspan="2" scope="col" class="col-sm-auto">유연근무 유형</th>
+                <th rowspan="2" scope="col" class="col-6 col-sm-3">유연근무<br> 유형</th>
                 <th colspan="6" scope="colgroup">평균 사용 횟수</th>
               </tr>
               <tr>
-                <th class="col-sm-auto" scope="col">없음</th>
-                <th class="col-sm-auto" scope="col">월1회이하</th>
-                <th class="col-sm-auto" scope="col">월 2~3회</th>
-                <th class="col-sm-auto" scope="col">주 1회</th>
-                <th class="col-sm-auto" scope="col">주 2~4회</th>
-                <th class="col-sm-auto" scope="col">주 5회</th>
+                <th class="col-1 col-sm-1" scope="col">없음</th>
+                <th class="col-1 col-sm-1" scope="col">월 1회 이하</th>
+                <th class="col-1 col-sm-1" scope="col">월 2~3회</th>
+                <th class="col-1 col-sm-1" scope="col">주 1회</th>
+                <th class="col-1 col-sm-1" scope="col">주 2~4회</th>
+                <th class="col-1 col-sm-1" scope="col">주 5회</th>
               </tr>
             </thead>
             <tbody>
@@ -465,174 +465,174 @@
                     <label class="form-check-label" for="ans-7-1-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="ans-7-1-2">②</label>
                     <input class="form-check-input" type="radio" name="ANS_CN_7-1" id="ans-7-1-2" value="2" />
+                    <label class="form-check-label" for="ans-7-1-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="ans-7-1-3">③</label>
                     <input class="form-check-input" type="radio" name="ANS_CN_7-1" id="ans-7-1-3" value="3" />
+                    <label class="form-check-label" for="ans-7-1-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="ans-7-1-4">④</label>
                     <input class="form-check-input" type="radio" name="ANS_CN_7-1" id="ans-7-1-4" value="4" />
+                    <label class="form-check-label" for="ans-7-1-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="ans-7-1-5">⑤</label>
                     <input class="form-check-input" type="radio" name="ANS_CN_7-1" id="ans-7-1-5" value="5" />
+                    <label class="form-check-label" for="ans-7-1-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="ans-7-1-6">⑥</label>
                     <input class="form-check-input" type="radio" name="ANS_CN_7-1" id="ans-7-1-6" value="6" />
+                    <label class="form-check-label" for="ans-7-1-6">⑥</label>
                   </td>
                 </tr>
               </form>
               <!-- ANS_CN_7-2 -->
-              <form>
+              <form name="ANS_CN_7-2">
                 <tr>
                   <th scope="row" class="table-side pl-4">(2) 근무시간선택형</th>
                   <td>
-                    <label class="form-check-label" for="radios-1">①</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-1" value="1" />
+                    <label class="form-check-label" for="ans-7-2-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-2">②</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-2" value="2" />
+                    <label class="form-check-label" for="ans-7-2-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-3">③</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-3" value="3" />
+                    <label class="form-check-label" for="ans-7-2-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-4">④</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-4" value="4" />
+                    <label class="form-check-label" for="ans-7-2-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-5">⑤</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-5" value="5" />
+                    <label class="form-check-label" for="ans-7-2-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-6">⑥</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-2" id="ans-7-2-6" value="6" />
+                    <label class="form-check-label" for="ans-7-2-6">⑥</label>
                   </td>
                 </tr>
               </form>
               <!-- ANS_CN_7-3 -->
-              <form>
+              <form name="ANS_CN_7-3">
                 <tr>
                   <th scope="row" class="table-side pl-4">(3) 집약근무형</th>
                   <td>
-                    <label class="form-check-label" for="radios-1">①</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-1" value="1" />
+                    <label class="form-check-label" for="ans-7-3-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-2">②</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-2" value="2" />
+                    <label class="form-check-label" for="ans-7-3-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-3">③</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-3" value="3" />
+                    <label class="form-check-label" for="ans-7-3-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-4">④</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-4" value="4" />
+                    <label class="form-check-label" for="ans-7-3-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-5">⑤</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-5" value="5" />
+                    <label class="form-check-label" for="ans-7-3-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-6">⑥</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-3" id="ans-7-3-6" value="6" />
+                    <label class="form-check-label" for="ans-7-3-6">⑥</label>
                   </td>
                 </tr>
               </form>
               <!-- ANS_CN_7-4 -->
-              <form>
+              <form name="ANS_CN_7-4">
                 <tr>
                   <th scope="row" class="table-side pl-4">(4) 재량근무제</th>
                   <td>
-                    <label class="form-check-label" for="radios-1">①</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-1" value="1" />
+                    <label class="form-check-label" for="ans-7-4-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-2">②</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-2" value="2" />
+                    <label class="form-check-label" for="ans-7-4-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-3">③</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-3" value="3" />
+                    <label class="form-check-label" for="ans-7-4-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-4">④</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-4" value="4" />
+                    <label class="form-check-label" for="ans-7-4-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-5">⑤</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-5" value="5" />
+                    <label class="form-check-label" for="ans-7-4-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-6">⑥</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-4" id="ans-7-4-6" value="6" />
+                    <label class="form-check-label" for="ans-7-4-6">⑥</label>
                   </td>
                 </tr>
               </form>
               <!-- ANS_CN_7-5 -->
-              <form>
+              <form name="ANS_CN_7-5">
                 <tr>
                   <th scope="row" class="table-side pl-4">(5) 재택근무형</th>
                   <td>
-                    <label class="form-check-label" for="radios-1">①</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-1" value="1" />
+                    <label class="form-check-label" for="ans-7-5-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-2">②</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-2" value="2" />
+                    <label class="form-check-label" for="ans-7-5-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-3">③</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-3" value="3" />
+                    <label class="form-check-label" for="ans-7-5-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-4">④</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-4" value="4" />
+                    <label class="form-check-label" for="ans-7-5-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-5">⑤</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-5" value="5" />
+                    <label class="form-check-label" for="ans-7-5-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-6">⑥</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-5" id="ans-7-5-6" value="6" />
+                    <label class="form-check-label" for="ans-7-5-6">⑥</label>
                   </td>
                 </tr>
               </form>
               <!-- ANS_CN_7-6 -->
-              <form>
+              <form name="ANS_CN_7-6">
                 <tr>
                   <th scope="row" class="table-side pl-4">(6) 스마트워크근무형</th>
                   <td>
-                    <label class="form-check-label" for="radios-1">①</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-1" value="1" />
+                    <label class="form-check-label" for="ans-7-6-1">①</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-2">②</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-2" value="2" />
+                    <label class="form-check-label" for="ans-7-6-2">②</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-3">③</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-3" value="3" />
+                    <label class="form-check-label" for="ans-7-6-3">③</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-4">④</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-4" value="4" />
+                    <label class="form-check-label" for="ans-7-6-4">④</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-5">⑤</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-5" value="5" />
+                    <label class="form-check-label" for="ans-7-6-5">⑤</label>
                   </td>
                   <td>
-                    <label class="form-check-label" for="radios-6">⑥</label>
-                    <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+                    <input class="form-check-input" type="radio" name="ANS_CN_7-6" id="ans-7-6-6" value="6" />
+                    <label class="form-check-label" for="ans-7-6-6">⑥</label>
                   </td>
                 </tr>
                 <tr>
@@ -669,50 +669,50 @@
     <!-- ANS_CN_8 -->
     <section id="survay" class="container pt-3">
       <section class="form-group">
-        <form>
-          <div class="survay-header container" for="radios">
-            <span>
-              8. 귀하의 주민등록주소와 관계없이 실제 거주지 및 현재 근무지를 시·군·구까지 기재해 주시기 바랍니다.
-            </span>
-            <figcaption class="figure-caption">
-              * 예) 예시 : 서울특별시 종로구, 충청북도 영동군 / ‘세종특별자치시’는 시·군·구 미입력
-            </figcaption>
-          </div>
-          <div class="row survay-body p-4">
-            <div class="form-text col-lg-12">
-              <label class="form-control-label" for="texts-2">
+        <div class="survay-header">
+          <span>
+            8. 귀하의 주민등록주소와 관계없이 실제 거주지 및 현재 근무지를 시·군·구까지 기재해 주시기 바랍니다.
+          </span>
+          <figcaption class="figure-caption">
+            * 예) 예시 : 서울특별시 종로구, 충청북도 영동군 / ‘세종특별자치시’ 및 ‘외국’은 시·군·구 미입력
+          </figcaption>
+        </div>
+        <div class="row survay-body p-4">
+          <div class="form-check col-lg-12">
+            <form name="ANS_CN_8-1">
+              <label class="form-control-label mr-2" for="ans-8-1-stdg">
                 ① 실제 거주지:
               </label>
-              <input class="form-control col-2" type="text" name="texts" id="texts-1" placeholder=""> (시·도)
-              <input class="form-control col-2" type="text" name="texts" id="texts-2" placeholder=""> (시·군·구)
-              <span class="ml-2" style="font-size: small;">
-                * 주말부부의 경우 주중에 거주하는 장소를 기준으로 작성합니다.
-              </span>
-            </div>
-            <div class="form-text col-lg-12">
-              <label class="form-control-label" for="texts-4">
+              <input class="form-control col-2" type="text" name="ANS_CN_8-1" id="ans-8-1-stdg-cd" placeholder=""> (시·도)
+              <input class="form-control col-2" type="text" name="ANS_CN_8-1" id="ans-8-1-stdg-nm" placeholder="">
+              (시·군·구)
+              <sub> * 주말부부의 경우 주중에 거주하는 장소를 기준으로 작성합니다. </sub>
+            </form>
+          </div>
+          <div class="form-check col-lg-12">
+            <form name="ANS_CN_8-2">
+              <label class="form-control-label  mr-2" for="ans-8-2-stdg">
                 ② 현재 근무지:
               </label>
-              <input class="form-control col-2" type="text" name="texts" id="texts-3" placeholder=""> (시·도)
-              <input class="form-control col-2" type="text" name="texts" id="texts-4" placeholder=""> (시·군·구)
-              <span class="ml-2" style="font-size: small;">
-                * 파견근무 중인 경우는 원소속기관의 주소를 기준으로 작성합니다.
-              </span>
-            </div>
+              <input class="form-control col-2" type="text" name="ANS_CN_8-2" id="ans-8-2-stdg-cd" placeholder=""> (시·도)
+              <input class="form-control col-2" type="text" name="ANS_CN_8-2" id="ans-8-2-stdg-nm" placeholder="">
+              (시·군·구)
+              <sub> * 파견근무 중인 경우는 원소속기관의 주소를 기준으로 작성합니다. </sub>
+            </form>
           </div>
-        </form>
+        </div>
       </section>
     </section>
 
     <!-- ANS_CN_9 -->
     <section id="survay" class="container pt-3">
       <section class="form-group">
-        <form>
-          <div class="survay-header container" for="radios">
-            <span>
-              9. 귀하께서 현재 담당하시는 가장 주된 업무의 유형은 무엇입니까?
-            </span>
-          </div>
+        <div class="survay-header">
+          <span>
+            9. 귀하께서 현재 담당하시는 가장 주된 업무의 유형은 무엇입니까?
+          </span>
+        </div>
+        <form name="ANS_CN_9">
           <div class="row survay-body p-4">
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="radios-1">
@@ -762,20 +762,33 @@
               </label>
               <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
             </div>
-            <div class="alert alert-secondary container">
-              【예시】<br>
-              ◦ 정책기획 - 정책의 수립 및 제도 개선 등에 관한 업무<br>
-              ◦ 대민업무 - 사무실에서 시민을 대상으로 직·간접으로 하는 민원업무(각종 증명서 발급, 인허가, 민원처리 등 업무)<br>
-              ◦ 조사·연구 - 통계 조사·분석, 현장조사 등의 조사업무/ 품종개량, 신약개발 등의 연구 업무<br>
-              ◦ 치안·교정 등 현장근무 - 사무실이 아닌 현장을 방문하여 행하는 서비스 업무(순찰, 교통, 화재진압, 우편, 출입국관리, 해안경비 등)<br>
-              ◦ 사업·집행 - 채용(시험), 조달, 각 기관별 자체사업 등<br>
-              ◦ 내부지원·관리 - 인사, 예산의 집행, 홍보, 법무, 청사관리, 청사방호 등의 업무<br>
-              ◦ 교육 - 다른 사람을 가르치는 업무 (교육을 지원하는 장학사, 조교 등은 '내부지원'에 해당)<br>
-              ◦ 기타 - 위의 유형에 해당하지 않는 모든 업무유형<br>
-              ※ 부서장(실․국장 포함)은 부서 업무의 성격에 따라 구분 (예)주로 대민업무를 수행하는 부서의 장은 '대민업무'로 응답<br>
-            </div>
-          </div>
         </form>
+        <div class="alert alert-secondary container ">
+          【예시】<br>
+          ◦ 정책기획 - 정책의 수립 및 제도 개선 등에 관한 업무<br>
+          ◦ 대민업무 - 사무실에서 시민을 대상으로 직·간접으로 하는 민원업무(각종 증명서 발급, 인허가, 민원처리 등 업무)<br>
+          ◦ 조사·연구 - 통계 조사·분석, 현장조사 등의 조사업무/ 품종개량, 신약개발 등의 연구 업무<br>
+          ◦ 치안·교정 등 현장근무 - 사무실이 아닌 현장을 방문하여 행하는 서비스 업무(순찰, 교통, 화재진압, 우편, 출입국관리, 해안경비 등)<br>
+          ◦ 사업·집행 - 채용(시험), 조달, 각 기관별 자체사업 등<br>
+          ◦ 내부지원·관리 - 인사, 예산의 집행, 홍보, 법무, 청사관리, 청사방호 등의 업무<br>
+          ◦ 교육 - 다른 사람을 가르치는 업무 (교육을 지원하는 장학사, 조교 등은 '내부지원'에 해당)<br>
+          ◦ 기타 - 위의 유형에 해당하지 않는 모든 업무유형<br>
+          ※ 부서장(실․국장 포함)은 부서 업무의 성격에 따라 구분 (예)주로 대민업무를 수행하는 부서의 장은 '대민업무'로 응답<br>
+        </div>
+      </section>
+    </section>
+
+    <section class="container pt-3 mb-5">
+      <section id="btn-page" class="d-flex justify-content-md-center mt-5">
+        <div class="btn-page">
+          <button type="button" class="btn btn-primary mr-2">
+            <i class="bi bi-chevron-left"></i> 이전페이지
+          </button>
+          <button type="button" class="btn btn-primary">
+            다음페이지 <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        </div>
       </section>
     </section>
 
@@ -1499,6 +1512,20 @@
             </div>
           </div>
         </form>
+      </section>
+    </section>
+
+    <section class="container pt-3 mb-5">
+      <section id="btn-page" class="d-flex justify-content-md-center mt-5">
+        <div class="btn-page">
+          <button type="button" class="btn btn-primary mr-2">
+            <i class="bi bi-chevron-left"></i> 이전페이지
+          </button>
+          <button type="button" class="btn btn-primary">
+            다음페이지 <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        </div>
       </section>
     </section>
 
@@ -3312,6 +3339,20 @@
       </section>
     </section>
 
+    <section class="container pt-3 mb-5">
+      <section id="btn-page" class="d-flex justify-content-md-center mt-5">
+        <div class="btn-page">
+          <button type="button" class="btn btn-primary mr-2">
+            <i class="bi bi-chevron-left"></i> 이전페이지
+          </button>
+          <button type="button" class="btn btn-primary">
+            다음페이지 <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        </div>
+      </section>
+    </section>
+
     <!-- ■ 병역 ■ -->
     <section id="object" class="container pt-2">
       <div class="object-header mb-1">
@@ -3324,6 +3365,7 @@
         공무원의 병역의무 이행규모 파악 및 제대군인 지원 관련 소요예산 추정 등을 위한 기초자료로 활용하기 위해 조사합니다.
       </div>
     </section>
+
 
     <!-- ANS_CN_25 -->
     <section id="survay" class="container pt-3">
@@ -3449,7 +3491,6 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
               </select> 월
             </form>
           </div>
@@ -3533,7 +3574,6 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
               </select> 월
             </form>
           </div>
@@ -3586,7 +3626,6 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
               </select> 월
               <select id="drop1" class="ml-2 col-1">
                 <option>일</option>
@@ -3601,7 +3640,7 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
+                <option>12 </option>
                 <option>13 </option>
                 <option>14 </option>
                 <option>15 </option>
@@ -3696,7 +3735,6 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
               </select> 월
               <select id="drop1" class="ml-2 col-1">
                 <option>일</option>
@@ -3711,7 +3749,7 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
+                <option>12 </option>
                 <option>13 </option>
                 <option>14 </option>
                 <option>15 </option>
@@ -3846,7 +3884,7 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
+                <option>12 </option>
                 <option>13 </option>
                 <option>14 </option>
                 <option>15 </option>
@@ -3889,7 +3927,6 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
               </select> 월
               <select id="drop1" class="ml-2 col-1">
                 <option>일</option>
@@ -3904,7 +3941,7 @@
                 <option>9 </option>
                 <option>10 </option>
                 <option>11 </option>
-
+                <option>12 </option>
                 <option>13 </option>
                 <option>14 </option>
                 <option>15 </option>
@@ -3998,7 +4035,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4033,7 +4069,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4068,7 +4103,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4103,7 +4137,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4138,7 +4171,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4173,7 +4205,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4208,7 +4239,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4243,7 +4273,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4278,7 +4307,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4313,7 +4341,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4348,7 +4375,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4383,7 +4409,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4418,7 +4443,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4453,7 +4477,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4488,7 +4511,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4674,7 +4696,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4709,7 +4730,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4744,7 +4764,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4779,7 +4798,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4814,7 +4832,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4849,7 +4866,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4884,7 +4900,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4919,7 +4934,6 @@
                       <option>9 </option>
                       <option>10 </option>
                       <option>11 </option>
-
                     </select> 월
                   </td>
                 </form>
@@ -4929,6 +4943,20 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+    </section>
+
+    <section class="container pt-3 mb-5">
+      <section id="btn-page" class="d-flex justify-content-md-center mt-5">
+        <div class="btn-page">
+          <button type="button" class="btn btn-primary mr-2">
+            <i class="bi bi-chevron-left"></i> 이전페이지
+          </button>
+          <button type="button" class="btn btn-primary">
+            다음페이지 <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
         </div>
       </section>
     </section>
@@ -4953,16 +4981,13 @@
           <span>
             35. 귀하께서 수행한 병역의 종류와 기간을 기재하여 주시기 바랍니다.
           </span>
-          <figcaption class="figure-caption">
-            ☞ 복수전공 등 전공이 다수인 경우 대표적인 전공분야 한개만 선택 / ※ 행정학, 정치외교학은 “① 인문․사회계”로 응답<br>
-            ☞ 학사학위 전공심화과정 및 수업연한 4년인 의료인 양성과정을 졸업한 경우, 대학교(4년제 이상) 선택<br>
-            * 교육부가 인정하는 학력을 정규교육으로 보며, 검정고시에 합격한 경우는 정규 교육을 받은 것으로 인정<br>
-          </figcaption>
         </div>
         <div class="col-lg-12 pt-4 pl-4">
           <!-- ANS_CN_35-1-1-->
-          <form>
             <p class="ml-5"> (1-1) 최고학력 </p>
+            <figcaption class="figure-caption">
+              * 교육부가 인정하는 학력을 정규교육으로 보며, 검정고시에 합격한 경우는 정규 교육을 받은 것으로 인정<br>
+            </figcaption>
             <div class="row survay-body p-3">
               <div class="form-check col-lg-4 col-md-6">
                 <label class="form-check-label" for="radios-1">
@@ -5012,12 +5037,15 @@
                 </label>
                 <input class="form-check-input" type="radio" name="radios" id="radios-2" value=" 2" />
               </div>
-
             </div>
           </form>
           <!-- ANS_CN_35-2 -->
           <form>
             <p class="ml-5"> (2) 전공분야 </p>
+              <figcaption class="figure-caption">
+                ☞ 복수전공 등 전공이 다수인 경우 대표적인 전공분야 한개만 선택 / ※ 행정학, 정치외교학은 “① 인문․사회계”로 응답<br>
+                ☞ 학사학위 전공심화과정 및 수업연한 4년인 의료인 양성과정을 졸업한 경우, 대학교(4년제 이상) 선택<br>
+              </figcaption>
             <div class="row survay-body p-3">
               <div class="form-check col-lg-4 col-md-6">
                 <label class="form-check-label" for="radios-1">
@@ -5097,7 +5125,6 @@
                 </label>
                 <input class="form-check-input" type="radio" name="radios" id="radios-13" value="13" />
               </div>
-
             </div>
           </form>
         </div>
