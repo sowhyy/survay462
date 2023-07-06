@@ -109,6 +109,9 @@ body {
   font-size: 12px;
   vertical-align: middle;
 }
+.font-lg {
+  font-size: 18px;
+}
 
 hr {
   box-sizing: content-box;

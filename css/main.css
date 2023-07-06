@@ -208,6 +208,10 @@ footer {
 /*--------------------------------------------------------------
 # survay / 질문
 --------------------------------------------------------------*/
+.border-survay {
+  border-color: #e1eef4 !important;
+}
+
 #survay .form-group {
   border: 1px solid #e1eef4;
   border-radius: 8px;
@@ -229,6 +233,38 @@ footer {
 .survay-body {
   padding: 10px;
   vertical-align: middle;
+}
+/*--------------------------------------------------------------
+# direct / 직접
+--------------------------------------------------------------*/
+#direct .form-group {
+  border: 1px solid #e1eef4;
+  border-radius: 8px;
+}
+#direct .direct-header {
+  padding: 12px;
+  padding-left: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f8f8f8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#direct .direct-body {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#direct .form-check .form-check-input {
+  margin-top: 0px;
+}
+.bg-object {
+  background-color: #ffebef!important;
 }
 
 /*--------------------------------------------------------------
@@ -310,3 +346,8 @@ sub {
   font-weight: 500;
   margin-left: 10px;
 }
+
+#toggleSwitch {
+  min-height: 1px;
+}
+

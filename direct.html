@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <title> 공무원 총조사 </title>
+  <!-- Favicons -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS Files -->
+  <link href="src/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="src/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" as="style" crossorigin href="src/pretendard_variable/pretendardvariable.css" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header class="fixed-top d-flex align-items-center">
+    <nav class="container d-flex align-items-center">
+      <div class="logo mx-auto">
+        <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
+      </div>
+      <!-- ======= 토클 / 아이콘 ======= -->
+      <div class="navicon d-flex align-items-center">
+        <div class="form-check form-switch mr-3" id="toggleSwitch">
+          <label class="form-check-label" for="toggleSwitch"></label>
+          <input class="form-check-input" type="checkbox" id="toggleSwitch" checked="" aria-label="..." />
+        </div>
+        <a href="login.html">
+          <i class="bi bi-person-fill" style="font-size: 18px; color: #fff" alt="로그인"></i></a>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Main ======= -->
+
+  <section class="container">
+    <section class="pt-8">
+      <!-- =======진행 사항 ======= -->
+      <div class="progress mt-5 mb-3" style="height: 15px">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+          aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      </div>
+      <!-- ======= 상단 공지 ======= -->
+      <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="alert-heading mt-2">직접입력기관용 시안용</h3>
+        <hr />
+        <ul class="font-lg">
+          <li>도메인주소 및 IP주소 미사용 예정 ❌ </li>
+          <li>인사혁신처 홈페이지 (https://www.mpm.go.kr/) 활용 예정 ⭕</li>
+          <li>메인페이지 - 히어로 배너 / 링크 👉 총조사 사이트 이동 </li>
+        </ul>
+        <hr />
+        <h6 class="ml-5"> 인사처 홈페이지 활용시, 기관에 상관없이 여러곳에서 동시 접속이 예상 됨. </h6>
+        <h5 class="ml-5">✅ 기존테이블에 <b>기관 선택 항목 추가</b></h5>
+      </div>
+    </section>
+  </section>
+
+
+
+  <!-- ======= Main ======= -->
+  <main>
+    <!-- ■ 구분 ■  -->
+    <section id="object" class="container pt-5">
+      <div class="object-header mb-1">
+        <span class="badge badge-primary">기본정보</span>
+      </div>
+    </section>
+
+    <!-- ======= 기본정보 ======= -->
+    <section id="direct" class="container pt-2">
+      <section class="form-group">
+        <div class="row m-0">
+          <form name="ANS_CN_BASICS_1" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">성별</div>
+            <div class="col-4 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_1" id="ans-b-1-1" value="1" />
+              <label class="form-check-label" for="ans-b-1-1">① 남성 </label>
+            </div>
+            <div class="col-4 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_1" id="ans-b-1-2" value="2" />
+              <label class="form-check-label" for="ans-b-1-2">② 여성</label>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_1" class="col-lg-6 d-inline-flex">
+            <div class="col-4 direct-header">
+              <p style="line-height: 1;">출생년도<br>
+                <span style="font-size: small;">(주민등록기준)</span>
+              </p>
+            </div>
+            <div class="col-6 form-check direct-body">
+              <input class="form-control ml-2 pl-1 col-6" type="text" name="ANS_CN_BASICS_2" min="4" max="4"
+                placeholder="4자리">
+              <label class="form-check-label ml-3" for="ans-b-2">년생</label>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- ■ 구분 ■  -->
+    <section id="object" class="container pt-5">
+      <div class="object-header mb-1">
+        <span class="badge badge-object">기관정보</span>
+      </div>
+    </section>
+
+    <!-- ======= 기관 정보 ======= -->
+    <section id="direct" class="container pt-2">
+      <section class="form-group">
+        <div class="row m-0 border-bottom border-survay">
+          <form name="SRVB_ANS_ID" class="col-lg-12 d-inline-flex p-0">
+            <div class="col-2 direct-header">기관</div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="SRVB_ANS_ID" id="ans-id-1" value="1" />
+              <label class="form-check-label" for="ans-id-1">① 국회</label>
+            </div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="SRVB_ANS_ID" id="ans-id-2" value="2" />
+              <label class="form-check-label" for="ans-id-2">② 법원</label>
+            </div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="SRVB_ANS_ID" id="ans-id-3" value="3" />
+              <label class="form-check-label" for="ans-id-2">③ 헌법재판소</label>
+            </div>
+            <span class=""></span>
+          </form>
+        </div>
+
+        <!-- ======= 직종 정보 ======= -->
+        <div class="row m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_3" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">직종</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_3" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직종명</option>
+                <option value="1">일반직</option>
+                <option value="2">특정직</option>
+                <option value="3">별정직</option>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_8" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">직종세분류</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_8" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직종명</option>
+                <option value="1">1급내지9급</option>
+                <option value="2">연구직</option>
+                <option value="3">전문경력관</option>
+                <option value="4">전문임기제</option>
+                <option value="5">한시임기제</option>
+                <option value="6">기타특정직</option>
+                <option value="7">법관</option>
+                <option value="8">별정</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <!-- ======= 계급 정보 ======= -->
+        <div class="row m-0 m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_5" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">
+              <p style="line-height: 1;">계급<br>
+                <span style="font-size: small;">(23.8.1.기준)</span>
+              </p>
+            </div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_5" id="ans-b-5" class="col-4 p-1">
+                <option value="select">계급명</option>
+                <option value="1">1급</option>
+                <option value="2">2급</option>
+                <option value="3">3급</option>
+                <option value="4">4급</option>
+                <option value="5">5급</option>
+                <option value="6">6급</option>
+                <option value="7">7급</option>
+                <option value="8">8급</option>
+                <option value="9">9급</option>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_4" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">계급코드</div>
+            <div class="col-7 form-check direct-body">
+              <input class="form-control col-4 p-2 text-center" type="text" name="ANS_CN_BASICS_4" placeholder="계급코드"
+                disabled>
+            </div>
+          </form>
+        </div>
+        <!-- ======= 직렬 정보 ======= -->
+        <div class="row m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_7" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">직렬</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_7" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직렬명</option>
+
+
+
+                <optgroup label="국회">
+                <option value="1">건축</option>
+                <option value="2">건축운영</option>
+                <option value="3">경위</option>
+                <option value="4">기록관리연구</option>
+                <option value="5">예산정책연구</option>
+                <option value="6">입법조사연구</option>
+              </optgroup>
+              <optgroup label="법원">
+                <option value="7">기록관리연구</option>
+                <option value="8">법원경위</option>
+                <option value="9">법원사무</option>
+                <option value="10">등기사무</option>
+              </optgroup>
+              <optgroup label="헌법재판소">
+                <option value="11">검찰</option>
+                <option value="12">관리</option>
+                <option value="13">법정경위</option>
+                <option value="14">기록연구</option>
+              </optgroup>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_6" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 direct-header">직렬코드</div>
+            <div class="col-7 form-check direct-body">
+              <input class="form-control col-4 px-2 text-center" type="text" name="ANS_CN_BASICS_6" placeholder="직렬코드"  disabled>
+            </div>
+          </form>
+        </div>
+
+        <!-- ======= 채용 정보 ======= -->
+        <div class="row m-0">
+          <form name="ANS_CN_BASICS_13" class="col-lg-12 d-inline-flex p-0">
+            <div class="col-2 direct-header">
+              <p style="line-height: 1;">임기제·시간선택제<br>
+                <span style="font-size: medium;">채용 여부</span>
+              </p>
+            </div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-1" value="1" />
+              <label class="form-check-label" for="ans-b-5-1">① 해당없음</label>
+            </div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-2" value="2" />
+              <label class="form-check-label" for="ans-b-5-2">② 임기제</label>
+            </div>
+            <div class="col-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-3" value="3" />
+              <label class="form-check-label" for="ans-b-5-3">③ 시간 선택제</label>
+            </div>
+            <span class=""></span>
+          </form>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+  <div class="pt-6"></div>
+
+  <!-- 하단 버튼 그룹-->
+  <section class="container pt-3 mb-5">
+    <section id="btn-page" class="d-flex justify-content-md-center mt-5">
+      <div class="btn-page">
+        <button type="button" class="btn btn-primary mr-2">
+          <i class="bi bi-chevron-left"></i> 이전페이지
+        </button>
+        <button type="button" class="btn btn-primary">
+          다음페이지 <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+      </div>
+    </section>
+
+    <section id="btn-page" class="d-flex justify-content-md-center mt-3">
+      <div class="btn-page">
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='tui-grid.html'">
+          그리드 </button>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='error.html'">
+          에러 </button>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='login.html'">
+          로그인 </button>
+      </div>
+    </section>
+  </section>
+
+  </main>
+
+  <div class="pt-5"></div>
+
+  <!-- ======= Footer ======= -->
+  <footer class="pt-2 pb-2">
+    <div class="container-fluid mt-3">
+      <div class="row justify-content-md-center">
+        <!-- ======= Footer / 좌측 ======= -->
+        <div class="col-4">
+          <div class="footer-content d-flex">
+            <div class="footer-head">
+              <div class="footer-logo1 mt-2 ">
+                <img src="img/logo.svg" style="height: 35px" alt="공무원 총조사 로고" />
+              </div>
+              <div class="footer-contacts">
+                <p class="mt-3">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, eaque ipsa
+                  quae ab illo inventore veritatis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ======= Footer / 우측 ======= -->
+        <div class="col-4">
+          <div class="footer-content d-flex">
+            <div class="footer-head">
+              <div class="footer-logo2 mt-2">
+                <img src="img/mpm_logo.png" style="height: 35px" alt="공무원 총조사 로고" />
+                <div class="footer-contacts mt-3">
+                  <p class="mb-2">
+                    세종특별자치시 정부세종2청사 13 (나성동772) 17-2동 3층
+                  </p>
+                  <p class="mb-2"><span>Time:</span> 9am-6pm</p>
+                  <p class="mb-2"><span>Tel:</span> +123 456 789</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
+  <!-- Bootstrap JS Files -->
+  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- Vendor CSS Files -->
+  <!-- <script type="text/javascript" src="src/toast-ui.grid/tui-grid.js"></script> -->
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
