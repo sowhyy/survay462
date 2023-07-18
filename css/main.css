@@ -150,7 +150,7 @@ footer {
 }
 @media (max-height: 500px) {
   #hero {
-    height: 150vh;
+    height: 100vh;
   }
 }
 #hero .carousel,
@@ -170,7 +170,7 @@ footer {
 }
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(0, 55, 100, 0.5);
+  background-color: rgba(0, 55, 100, .05);
 }
 #hero .carousel-caption {
   display: flex;
@@ -179,28 +179,39 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
+  top: 30%;
+  left: 15%;
+  right: 15%;
+  z-index: 999;
+}
+#hero h5 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #595959;
 }
 @media (max-width: 768px) {
   #hero h5 {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.2;
   }
 }
 #hero p {
-  width: 80%;
-  font-size: 30px;
-  line-height: 1.2;
+  width: 100%;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #191919;
 }
 @media (min-width: 1024px) {
   #hero p {
-    width: 60%;
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
   #hero p {
-    font-size: 28px;
+    font-size: 21px;
     line-height: 1.2;
   }
 }
