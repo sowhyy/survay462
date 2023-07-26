@@ -1,3 +1,5 @@
+$('#popup').modal('show')
+
 (function () {
   "use strict";
 

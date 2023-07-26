@@ -65,8 +65,172 @@
       </div>
     </section>
   </section>
+  
   <!-- ======= Main ======= -->
   <main>
+<!-- ======= 기본정보 ======= -->
+    <section id="object" class="container pt-5">
+      <div class="object-header mb-1">
+        <span class="badge badge-primary">기본정보</span>
+      </div>
+    </section>
+
+    <section id="direct" class="container pt-2">
+      <section class="form-group">
+        <!-- ======= 기본정보 ======= -->
+        <div class="row m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_1" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">성별</div>
+            <div class="col-4 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_1" id="ans-b-1-1" value="1" />
+              <label class="form-check-label" for="ans-b-1-1">① 남성 </label>
+            </div>
+            <div class="col-4 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_1" id="ans-b-1-2" value="2" />
+              <label class="form-check-label" for="ans-b-1-2">② 여성</label>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_1" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">
+              <p style="line-height: 1;">출생년도<br>
+                <span style="font-size: small;">(주민등록기준)</span>
+              </p>
+            </div>
+            <div class="col-6 form-check direct-body">
+              <input class="form-control ml-2 pl-1 col-6" type="text" name="ANS_CN_BASICS_2" min="4" max="4"
+                placeholder="4자리">
+              <label class="form-check-label ml-3" for="ans-b-2">년생</label>
+            </div>
+          </form>
+        </div>
+        <!-- ======= 직종 정보 ======= -->
+        <div class="row m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_3" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">직종</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_3" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직종명</option>
+                <option value="1">일반직</option>
+                <option value="2">특정직</option>
+                <option value="3">별정직</option>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_8" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">직종세분류</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_8" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직종명</option>
+                <option value="1">1급내지9급</option>
+                <option value="2">연구직</option>
+                <option value="3">전문경력관</option>
+                <option value="4">전문임기제</option>
+                <option value="5">한시임기제</option>
+                <option value="6">기타특정직</option>
+                <option value="7">법관</option>
+                <option value="8">별정</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <!-- ======= 계급 정보 ======= -->
+        <div class="row m-0 m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_5" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">
+              <p style="line-height: 1;">계급<br>
+                <span style="font-size: small;">(23.8.1.기준)</span>
+              </p>
+            </div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_5" id="ans-b-5" class="col-4 p-1">
+                <option value="select">계급명</option>
+                <option value="1">1급</option>
+                <option value="2">2급</option>
+                <option value="3">3급</option>
+                <option value="4">4급</option>
+                <option value="5">5급</option>
+                <option value="6">6급</option>
+                <option value="7">7급</option>
+                <option value="8">8급</option>
+                <option value="9">9급</option>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_4" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">계급코드</div>
+            <div class="col-7 form-check direct-body">
+              <input class="form-control col-4 p-2 text-center" type="text" name="ANS_CN_BASICS_4" placeholder="계급코드"
+                disabled>
+            </div>
+          </form>
+        </div>
+        <!-- ======= 직렬 정보 ======= -->
+        <div class="row m-0 border-bottom border-survay">
+          <form name="ANS_CN_BASICS_7" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">직렬</div>
+            <div class="col-7 form-check direct-body">
+              <select name="ANS_CN_BASICS_7" id="ans-b-3" class="col-4 p-1">
+                <option value="select">직렬명</option>
+                <optgroup label="국회">
+                  <option value="1">건축</option>
+                  <option value="2">건축운영</option>
+                  <option value="3">경위</option>
+                  <option value="4">기록관리연구</option>
+                  <option value="5">예산정책연구</option>
+                  <option value="6">입법조사연구</option>
+                </optgroup>
+                <optgroup label="법원">
+                  <option value="7">기록관리연구</option>
+                  <option value="8">법원경위</option>
+                  <option value="9">법원사무</option>
+                  <option value="10">등기사무</option>
+                </optgroup>
+                <optgroup label="헌법재판소">
+                  <option value="11">검찰</option>
+                  <option value="12">관리</option>
+                  <option value="13">법정경위</option>
+                  <option value="14">기록연구</option>
+                </optgroup>
+              </select>
+            </div>
+          </form>
+          <form name="ANS_CN_BASICS_6" class="col-lg-6 d-inline-flex p-0">
+            <div class="col-4 col-sm-3 direct-header">직렬코드</div>
+            <div class="col-7 form-check direct-body">
+              <input class="form-control col-4 px-2 text-center" type="text" name="ANS_CN_BASICS_6" placeholder="직렬코드"
+                disabled>
+            </div>
+          </form>
+        </div>
+
+        <!-- ======= 채용 정보 ======= -->
+        <div class="row m-0">
+          <form name="ANS_CN_BASICS_13" class="col-lg-12 d-inline-flex p-0">
+            <div class="col-2 col-sm-3 direct-header">
+              <p style="line-height: 1;">임기제·시간선택제<br>
+                <span style="font-size: medium;">채용 여부</span>
+              </p>
+            </div>
+            <div class="col-3 col-sm-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-1" value="1" />
+              <label class="form-check-label" for="ans-b-5-1">① 해당없음</label>
+            </div>
+            <div class="col-3 col-sm-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-2" value="2" />
+              <label class="form-check-label" for="ans-b-5-2">② 임기제</label>
+            </div>
+            <div class="col-3 col-sm-3 form-check direct-body">
+              <input class="form-check-input" type="radio" name="ANS_CN_BASICS_13" id="ans-b-5-3" value="3" />
+              <label class="form-check-label" for="ans-b-5-3">③ 시간 선택제</label>
+            </div>
+            <span class=""></span>
+          </form>
+        </div>
+
+      </section>
+    </section>
+
+
     <!-- ■ 복지 ■  -->
     <section id="object" class="container pt-2">
       <div class="object-header mb-1">
@@ -4984,42 +5148,42 @@
         </div>
         <div class="col-lg-12 pt-4 pl-4">
           <!-- ANS_CN_35-1-1-->
-            <p class="ml-5"> (1-1) 최고학력 </p>
-            <figcaption class="figure-caption">
-              * 교육부가 인정하는 학력을 정규교육으로 보며, 검정고시에 합격한 경우는 정규 교육을 받은 것으로 인정<br>
-            </figcaption>
-            <div class="row survay-body p-3">
-              <div class="form-check col-lg-4 col-md-6">
-                <label class="form-check-label" for="radios-1">
-                  ① 고졸이하
-                </label>
-                <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
-              </div>
-              <div class="form-check col-lg-4 col-md-6">
-                <label class="form-check-label" for="radios-2">
-                  ② 대학(교) (3년제 이하)
-                </label>
-                <input class="form-check-input" type="radio" name="radios" id="radios-2" value=" 2" />
-              </div>
-              <div class="form-check col-lg-4 col-md-6">
-                <label class="form-check-label" for="radios-3">
-                  ③ 대학교(4년제 이상)
-                </label>
-                <input class="form-check-input" type="radio" name="radios" id="radios-3" value=" 3" />
-              </div>
-              <div class="form-check col-lg-4 col-md-6">
-                <label class="form-check-label" for="radios-4">
-                  ④ 대학원(석사)
-                </label>
-                <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
-              </div>
-              <div class="form-check col-lg-4 col-md-6">
-                <label class="form-check-label" for="radios-5">
-                  ⑤ 대학원(박사)
-                </label>
-                <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
-              </div>
+          <p class="ml-5"> (1-1) 최고학력 </p>
+          <figcaption class="figure-caption">
+            * 교육부가 인정하는 학력을 정규교육으로 보며, 검정고시에 합격한 경우는 정규 교육을 받은 것으로 인정<br>
+          </figcaption>
+          <div class="row survay-body p-3">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ① 고졸이하
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
             </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ② 대학(교) (3년제 이하)
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③ 대학교(4년제 이상)
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④ 대학원(석사)
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤ 대학원(박사)
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+          </div>
           </form>
           <!-- ANS_CN_35-1-2 -->
           <form>
@@ -5042,10 +5206,10 @@
           <!-- ANS_CN_35-2 -->
           <form>
             <p class="ml-5"> (2) 전공분야 </p>
-              <figcaption class="figure-caption">
-                ☞ 복수전공 등 전공이 다수인 경우 대표적인 전공분야 한개만 선택 / ※ 행정학, 정치외교학은 “① 인문․사회계”로 응답<br>
-                ☞ 학사학위 전공심화과정 및 수업연한 4년인 의료인 양성과정을 졸업한 경우, 대학교(4년제 이상) 선택<br>
-              </figcaption>
+            <figcaption class="figure-caption">
+              ☞ 복수전공 등 전공이 다수인 경우 대표적인 전공분야 한개만 선택 / ※ 행정학, 정치외교학은 “① 인문․사회계”로 응답<br>
+              ☞ 학사학위 전공심화과정 및 수업연한 4년인 의료인 양성과정을 졸업한 경우, 대학교(4년제 이상) 선택<br>
+            </figcaption>
             <div class="row survay-body p-3">
               <div class="form-check col-lg-4 col-md-6">
                 <label class="form-check-label" for="radios-1">

@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+
   <!-- ======= Header ======= -->
   <header class="fixed-top d-flex align-items-center">
     <nav class="container d-flex align-items-center">
@@ -38,6 +40,34 @@
     </nav>
   </header>
   <!-- End Header -->
+    <!-- ======= modal popup ======= -->
+    <div id="popup" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title ml-2" id="staticBackdropLabel"><b> [필수] 개인정보 수집 및 이용 </b></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-2">
+            공무원총조사는 인사정책 수립 및 공무원 제도 개선, 그리고 인적자원 통계의 주기별 변동 사항을 파악하기 위한 설문조사로 개인정보를 수집·이용합니다. 개인 정보는 식별할 수 없는 형태로 수집, 통계 처리를 위한 행정 자료로만 활용되며 추후 보관 및 관리 되지않습니다. 응답하신 내용만 총조사 시스템에 코드 형태로 저장됩니다.<br>
+            <p class="mt-3">●귀하는 공무원총조사 참여에 필요한 최소한의 개인정보 수집·이용에 동의하지 않을수 있으나, 동의를 거부 할 경우 설문조사 참여가 불가합니다. </p>
+            <p class="agree-text mt-3">위 개인 정보 수집·이용에 동의합니다. (필수)  </b>
+            
+            <label class="form-check-label" for="agree">
+            <input class="form-check-input ml-3" type="checkbox" name="agree" id="agree" value="agree" />
+              동의함
+            </label>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">나가기</button>
+            <button type="button" class="btn btn-primary">설문참여</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- ======= hero / 카드 뉴스 ======= -->
   <section id="hero">
@@ -50,16 +80,17 @@
       <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url(img/bg/blue7.png)">
           <div class="carousel-caption d-none d-md-block">
-          <h5>조사 개요</h5>
+            <h5>조사 개요</h5>
             <p>◈ 정부는 1969년부터 5년 주기로 <span style="color: #003739;"><b>「공무원총조사」</b></span>를 실시하여, <br>
               <b>인사정책수립 및 후생복지제도 개선, 그리고 인적자원 통계의 주기별 변동사항 파악</b>을 위해 활용하고 있습니다.<br>
               <br>
               <span style="font-size: 18px;">
-              <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
-              <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
-              <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
-              <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
-              <b>● 결과공표</b> '24년 2월말' </span></p>
+                <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
+                <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
+                <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
+                <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
+                <b>● 결과공표</b> '24년 2월말' </span>
+            </p>
             <button type="button" class="btn btn-primary">Secondary</button>
           </div>
         </div>
@@ -70,11 +101,12 @@
               <b>인사정책수립 및 후생복지제도 개선, 그리고 인적자원 통계의 주기별 변동사항 파악</b>을 위해 활용하고 있습니다.<br>
               <br>
               <span style="font-size: 18px;">
-              <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
-              <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
-              <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
-              <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
-              <b>● 결과공표</b> '24년 2월말' </span></p>
+                <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
+                <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
+                <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
+                <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
+                <b>● 결과공표</b> '24년 2월말' </span>
+            </p>
             <button type="button" class="btn btn-secondary">Secondary</button>
           </div>
         </div>
@@ -85,11 +117,12 @@
               <b>인사정책수립 및 후생복지제도 개선, 그리고 인적자원 통계의 주기별 변동사항 파악</b>을 위해 활용하고 있습니다.<br>
               <br>
               <span style="font-size: 18px;">
-              <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
-              <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
-              <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
-              <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
-              <b>● 결과공표</b> '24년 2월말' </span></p>
+                <b>● 조사기간</b> '23.09.01. ~ 10.31.' (60일간) <br>
+                <b>● 조사대상</b> 국가 및 지방공무원 약 120만명 <br>
+                <sup>※ 파견중인 공무원은 원소속 기관에서 응답 </sup><br>
+                <b>● 조사근거</b> 국가공무원법 제 18조 (통계보고) <br>
+                <b>● 결과공표</b> '24년 2월말' </span>
+            </p>
             <button type="button" class="btn btn-secondary">Secondary</button>
           </div>
         </div>
@@ -126,7 +159,7 @@
         </p>
         <hr />
         <p class="mb-0">
-          공무원 총조사는 공무원 보수 현실화, 주거안정 사업, 
+          공무원 총조사는 공무원 보수 현실화, 주거안정 사업,
           사이버 외국어 교육과정 개발 등 각종 인사 및 복지제도 개선 등에 활용하기 위한 총조사입니다.
         </p>
       </div>
@@ -159,73 +192,73 @@
           <div class="row survay-body p-4">
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-1">
-                ① 
+                ①
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-2">
-                ② 
+                ②
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-3">
-                ③ 
+                ③
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-4">
-                ④ 
+                ④
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-5">
-                ⑤ 
+                ⑤
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-6">
-                ⑥ 
+                ⑥
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-7">
-                ⑦ 
+                ⑦
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-8">
-                ⑧ 
+                ⑧
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-9">
-                ⑨ 
+                ⑨
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-10">
-                ⑩ 
+                ⑩
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-11">
-                ⑪ 
+                ⑪
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
             </div>
             <div class="form-check col-lg-4 col-md-6">
               <label class="form-check-label" for="check-12">
-                ⑫ 
+                ⑫
               </label>
               <input class="form-check-input" type="checkbox" name="check" id="check-12" value="12" />
             </div>
@@ -238,86 +271,86 @@
     <section class="container pt-3">
       <section id="survay" class="form-group">
         <form>
-        <div class="survay-header container" for="check">
-          <span>
-            ✅ 체크 / 다중 / 기타, 주관식 / 문제
-          </span>
-        </div>
-        <div class="row survay-body p-4">
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-1">
-              ① 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+          <div class="survay-header container" for="check">
+            <span>
+              ✅ 체크 / 다중 / 기타, 주관식 / 문제
+            </span>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-2">
-              ② 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-1">
+                ①
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-2">
+                ②
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-2" value=" 2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-3">
+                ③
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-4">
+                ④
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-5">
+                ⑤
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-6">
+                ⑥
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-7">
+                ⑦
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-8">
+                ⑧
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-9">
+                ⑨
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-10">
+                ⑩
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-11">
+                ⑪
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="check-12">
+                ⑫ 기타
+              </label>
+              <input class="form-check-input" type="checkbox" name="check" id="check-12" value="12" />
+              <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
+            </div>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-3">
-              ③ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-3" value=" 3" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-4">
-              ④ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-4" value="4" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-5">
-              ⑤ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-5" value="5" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-6">
-              ⑥ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-6" value="6" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-7">
-              ⑦ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-7" value="7" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-8">
-              ⑧ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-8" value="8" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-9">
-              ⑨ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-9" value="9" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-10">
-              ⑩ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-10" value="10" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-11">
-              ⑪ 
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-11" value="11" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="check-12">
-              ⑫ 기타
-            </label>
-            <input class="form-check-input" type="checkbox" name="check" id="check-12" value="12" />
-            <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
-          </div>
-        </div>
         </form>
       </section>
     </section>
@@ -326,85 +359,85 @@
     <section class="container pt-3">
       <section id="survay" class="form-group">
         <form>
-        <div class="survay-header container" for="radios">
-          <span>
-            🔵 라디오 / 단일 / 문제
-          </span>
-        </div>
-        <div class="row survay-body p-4">
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-1">
-              ① 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+          <div class="survay-header container" for="radios">
+            <span>
+              🔵 라디오 / 단일 / 문제
+            </span>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-2">
-              ② 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ①
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ②
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-6">
+                ⑥
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-7">
+                ⑦
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-8">
+                ⑧
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-9">
+                ⑨
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-10">
+                ⑩
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-11">
+                ⑪
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-12">
+                ⑫
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
+            </div>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-3">
-              ③ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-4">
-              ④ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-5">
-              ⑤ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-6">
-              ⑥ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-7">
-              ⑦ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-8">
-              ⑧ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-9">
-              ⑨ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-10">
-              ⑩ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-11">
-              ⑪ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-12">
-              ⑫ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
-          </div>
-        </div>
         </form>
       </section>
     </section>
@@ -413,87 +446,87 @@
     <section class="container pt-3">
       <section id="survay" class="form-group">
         <form>
-        <div class="survay-header container" for="radios">
-          <span>
-            🔵 라디오 / 단일 / 기타, 주관식 / 문제
-          </span>
-        </div>
-        <div class="row survay-body p-4">
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-1">
-              ① 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+          <div class="survay-header container" for="radios">
+            <span>
+              🔵 라디오 / 단일 / 기타, 주관식 / 문제
+            </span>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-2">
-              ② 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+          <div class="row survay-body p-4">
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-1">
+                ①
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-1" value="1" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-2">
+                ②
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-2" value="2" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-3">
+                ③
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-4">
+                ④
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-5">
+                ⑤
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-6">
+                ⑥
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-7">
+                ⑦
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-8">
+                ⑧
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-9">
+                ⑨
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-10">
+                ⑩
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-11">
+                ⑪
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
+            </div>
+            <div class="form-check col-lg-4 col-md-6">
+              <label class="form-check-label" for="radios-12">
+                ⑫
+              </label>
+              <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
+              <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
+              </label>
+            </div>
           </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-3">
-              ③ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-3" value="3" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-4">
-              ④ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-4" value="4" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-5">
-              ⑤ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-5" value="5" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-6">
-              ⑥ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-6" value="6" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-7">
-              ⑦ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-7" value="7" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-8">
-              ⑧ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-8" value="8" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-9">
-              ⑨ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-9" value="9" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-10">
-              ⑩ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-10" value="10" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-11">
-              ⑪ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-11" value="11" />
-          </div>
-          <div class="form-check col-lg-4 col-md-6">
-            <label class="form-check-label" for="radios-12">
-              ⑫ 
-            </label>
-            <input class="form-check-input" type="radio" name="radios" id="radios-12" value="12" />
-            <input type="text" name="testdis" class="form-control col-8" placeholder="50자 이내">
-            </label>
-          </div>
-        </div>
         </form>
       </section>
     </section>

@@ -362,3 +362,9 @@ sub {
   min-height: 1px;
 }
 
+
+.agree-text {
+  text-align: center;
+
+  font-weight: 600;
+}
