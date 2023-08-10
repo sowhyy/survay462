@@ -333,6 +333,15 @@ select:focus {
   font-size: 13px;
   margin-right: 8px;
 }
+.badge-primary-sm {
+  color: #fff;
+  background-color: rgba(0,123,255,0.5);
+  background-color: #196294;
+  margin: 5px 0px;
+  padding: 5px;
+  font-size: 13px;
+  margin-right: 8px;
+}
 
 .object-body {
   font-size: 14px;
@@ -365,6 +374,13 @@ sub {
 
 .agree-text {
   text-align: center;
-
   font-weight: 600;
+}
+
+.code {
+  padding: 15px 0;
+}
+.code-ex {
+  font-size: 13px;
+  font-weight: 550;
 }

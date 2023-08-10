@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <title> 공무원 총조사 </title>
+  <!-- Favicons -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS Files -->
+  <link href="src/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="src/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" as="style" crossorigin href="src/pretendard_variable/pretendardvariable.css" />
+  <link rel="stylesheet" href="src/toast-ui.grid/tui-grid.css" >
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      width: 550px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <section id="object" class="container pt-2">
+      <div class="object-header mb-1">
+        <span class="badge badge-primary">코드검색</span>
+      </div>
+      
+      <div class="object-body alert alert-primary text-center px-2">
+        <span class="badge badge-primary-sm p-2">코드명</span>
+        <input type="text" class="code col-6 form-control px-3 mx-3" title="주소입력" placeholder="구 / 군단위로 입력해 주세요"
+          id="_searchKeyword" name="searchKeyword" value="" maxlength="100" data-index="0">
+        <button type="button" class="btn btn-primary btn-sm px-3 ml-2">조회</button>
+        <div class="code-ex pt-2">
+          * 예) 서울특별시 종로구, 충청북도 영동군 / ‘세종특별자치시’ 및 ‘외국’은 시·군·구 미입력
+        </div>
+      </div>
+    </section>
+
+
+    <section id="toast-grid" class="d-flex justify-content-center pt-3">
+      <div class="toast-grid-container ">
+        <div id="grid" style="width: 520px;"></div>
+      </div>
+    </section>
+    
+  </div>
+
+
+  <!-- Bootstrap JS Files -->
+  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="src/bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- Vendor CSS Files -->
+  <script type="text/javascript" src="src/toast-ui.grid/tui-grid.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/code.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

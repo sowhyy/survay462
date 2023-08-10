@@ -134,8 +134,9 @@
   position: relative;
   border-width: 0;
   clear: both;
-  font-size: 13px;
-  font-family: Arial, '\B3CB\C6C0', Dotum, sans-serif;
+  font-size: 14px;
+  font-family: "Pretendard Variable", '\B3CB\C6C0', sans-serif;
+  border-radius: 50px;
 }
 .tui-grid-container ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -242,7 +243,7 @@
     no-repeat;
   vertical-align: middle;
   cursor: pointer;
-  float: right;
+  /* float: right; */
 }
 .tui-grid-btn-filter {
   display: inline-block;
@@ -395,8 +396,8 @@
   display: block;
   overflow: hidden;
   line-height: 1.5;
-  *margin-left: -2px;
-  *padding-left: 2px;
+  margin-left: -2px;
+  padding-left: 2px;
 }
 .tui-grid-cell-content input[type='text'],
 .tui-grid-cell-content input[type='password'] {
