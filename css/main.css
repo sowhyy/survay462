@@ -150,7 +150,7 @@ footer {
 }
 @media (max-height: 500px) {
   #hero {
-    height: 100vh;
+    height: 150vh;
   }
 }
 #hero .carousel,
@@ -170,7 +170,7 @@ footer {
 }
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(0, 55, 100, .05);
+  background-color: rgba(0, 55, 100, .4);
 }
 #hero .carousel-caption {
   display: flex;
@@ -199,10 +199,9 @@ footer {
 #hero p {
   width: 100%;
   font-size: 21px;
-  font-weight: 600;
   line-height: 1.5;
   margin: 0 auto 30px auto;
-  color: #191919;
+  color: #fff;
 }
 @media (min-width: 1024px) {
   #hero p {
@@ -223,11 +222,11 @@ footer {
   border-color: #e1eef4 !important;
 }
 
-#survay .form-group {
+.form-group {
   border: 1px solid #e1eef4;
   border-radius: 8px;
 }
-#survay .survay-header {
+.survay-header {
   padding: 16px;
   padding-left: 24px;
   border-top-left-radius: 8px;
@@ -236,7 +235,7 @@ footer {
   font-weight: 600;
   background-color: #f8f8f8;
 }
-#survay .survay-body span {
+.survay-body span {
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
@@ -300,6 +299,7 @@ select {
   border-radius: 4px;
   padding: 0;
   border: 1px solid #ced4da;
+  height: 24px;
 }
 select:focus {
   color: #575757;
@@ -324,19 +324,19 @@ select:focus {
   margin: 6px 0px;
 }
 
-.badge-object-sm {
+.badge-dark-sm {
   color: #fff;
   background-color: rgba(228,3,46,.5);
-  background-color: #f9979b;
+  background-color: #1b1e21;
   margin: 5px 0px;
   padding: 5px;
   font-size: 13px;
   margin-right: 8px;
 }
-.badge-primary-sm {
+.badge-object-sm {
   color: #fff;
-  background-color: rgba(0,123,255,0.5);
-  background-color: #196294;
+  background-color: rgba(228,3,46,.5);
+  background-color: #f9979b;
   margin: 5px 0px;
   padding: 5px;
   font-size: 13px;
@@ -371,16 +371,3 @@ sub {
   min-height: 1px;
 }
 
-
-.agree-text {
-  text-align: center;
-  font-weight: 600;
-}
-
-.code {
-  padding: 15px 0;
-}
-.code-ex {
-  font-size: 13px;
-  font-weight: 550;
-}
